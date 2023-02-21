@@ -1,0 +1,354 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "louis cafe", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  transition: all 0.8s ease;
+  overflow-x: hidden;
+}
+
+/* Icone referente a aba da página */
+.icone_tela {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #00ccbe;
+}
+.icone_tela .imagem i {
+  font-size: 2rem;
+}
+
+/* Conteudo  */
+.conteudo {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Parte informações  */
+.conteudo .parte_info_user {
+  width: 100%;
+  height: 24rem;
+  background: #00ccbe;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1rem solid #1da49a;
+}
+/* Imagem */
+.conteudo .parte_info_user .foto_user {
+  width: 15rem;
+  height: 15rem;
+}
+.conteudo .parte_info_user .foto_user img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 50%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+/* Dados */
+.conteudo .parte_info_user .info {
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.conteudo .parte_info_user .info h3 {
+  text-align: center;
+  font-size: 1.8rem;
+}
+.conteudo .parte_info_user .info span {
+  text-align: center;
+  font-size: 1.3rem;
+}
+/* Parte Salas  */
+.conteudo .parte_salas {
+  width: 100%;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.conteudo .parte_salas span {
+  width: 80%;
+  height: 5rem;
+  margin: 1rem;
+  padding: 28px 0 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.conteudo .parte_salas ul {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.conteudo .parte_salas ul li {
+  width: 20rem;
+  height: 4rem;
+  background: #9eece6;
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  justify-content: space-around;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 50%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+/* Imagem materia */
+.conteudo .parte_salas ul li .img-materia {
+  width: 3rem;
+  height: 3rem;
+}
+.conteudo .parte_salas ul li .img-materia img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+/* Hover */
+.conteudo .parte_salas ul li:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+  transition: all 0.4s easy-in-out;
+}
+.conteudo .desempenho .grafico .colunas .area-grafico .barras .quiz:hover {
+  display: block;
+  transform: scale(1.02);
+  cursor: pointer;
+  transition: all 0.4s easy-in-out;
+}
+.conteudo
+  .desempenho
+  .grafico
+  .colunas
+  .area-grafico
+  .barras
+  .descoberta:hover {
+  display: block;
+  transform: scale(1.02);
+  cursor: pointer;
+  transition: all 0.4s easy-in-out;
+}
+.conteudo .desempenho .grafico .colunas .area-grafico .barras .materias:hover {
+  display: block;
+  transform: scale(1.02);
+  cursor: pointer;
+  transition: all 0.4s easy-in-out;
+}
+/* Parte gráfico */
+.conteudo .desempenho .titulo {
+  width: 100%;
+  height: 3rem;
+  display: none;
+  justify-content: center;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.conteudo .desempenho .grafico {
+  width: 100%;
+  height: 35rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 10px;
+}
+.conteudo .desempenho .grafico .colunas {
+  width: 80%;
+  height: 25rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.conteudo .desempenho .grafico .colunas .escala-y {
+  width: 10%;
+  height: 25rem;
+  align-items: center;
+  justify-content: flex-start;
+  display: flex;
+  border-right: 5px solid #ccc;
+}
+.conteudo .desempenho .grafico .colunas .escala-y span {
+  font-size: 1.1rem;
+  font-weight: 600;
+  transform: rotate(-90deg);
+}
+.conteudo .desempenho .grafico .colunas .area-grafico {
+  width: 80%;
+  height: 25rem;
+  align-items: center;
+  justify-content: space-evenly;
+  display: flex;
+  border-bottom: 5px solid #ccc;
+}
+.conteudo .desempenho .grafico .colunas .area-grafico .barras {
+  width: 12rem;
+  height: 25rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+.conteudo .desempenho .grafico .colunas .area-grafico .barras span {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.conteudo .desempenho .grafico .colunas .area-grafico .barras p {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+/* Quiz */
+.conteudo .desempenho .grafico .colunas .area-grafico .barras .quiz {
+  width: 3rem;
+  height: 12rem;
+  background: #412973;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 50%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+/* Descoberta */
+.conteudo .desempenho .grafico .colunas .area-grafico .barras .descoberta {
+  width: 3rem;
+  height: 7rem;
+  background: #ff1964;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 50%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+/* Materias */
+.conteudo .desempenho .grafico .colunas .area-grafico .barras .materias {
+  width: 3rem;
+  height: 20rem;
+  background: #00ccbe;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 50%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+/* Responsivo  */
+@media screen and (max-width: 970px) {
+  .conteudo .parte_salas {
+    height: 40rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  .conteudo .desempenho .grafico .colunas {
+    width: 90%;
+  }
+  .conteudo .desempenho .grafico .colunas .area-grafico {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .conteudo .desempenho .grafico .colunas {
+    width: 100%;
+  }
+  .conteudo .desempenho .grafico .colunas .area-grafico .barras {
+    width: 7rem;
+  }
+}
+@media screen and (max-width: 560px) {
+  .conteudo .parte_info_user .foto_user {
+    width: 13rem;
+    height: 13rem;
+  }
+  .conteudo .parte_info_user .info h3 {
+    font-size: 1.3rem;
+  }
+  .conteudo .parte_info_user .info span {
+    font-size: 1.1rem;
+  }
+  .conteudo .desempenho .grafico .colunas .escala-y {
+    border: none;
+  }
+  .conteudo .desempenho .grafico .colunas .area-grafico {
+    border: none;
+  }
+  .conteudo .desempenho .grafico .colunas .area-grafico .barras {
+    width: 3rem;
+  }
+}
+@media screen and (max-width: 460px) {
+  .conteudo .parte_info_user {
+    padding: 10px;
+  }
+  .conteudo .parte_salas {
+    padding: 10px;
+  }
+  .conteudo .parte_salas ul li {
+    width: 15rem;
+  }
+  .conteudo .desempenho .grafico .colunas .area-grafico {
+    width: 100%;
+  }
+  .conteudo .desempenho .titulo {
+    display: flex;
+  }
+  .conteudo .desempenho .grafico {
+    height: 30rem;
+  }
+  .conteudo .desempenho .grafico .colunas .escala-y {
+    display: none;
+  }
+  .conteudo .desempenho .grafico .colunas .area-grafico .barras span {
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  .conteudo .desempenho .grafico .colunas .area-grafico .barras p {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  /* Quiz */
+  .conteudo .desempenho .grafico .colunas .area-grafico .barras .quiz {
+    width: 2.5rem;
+  }
+  /* Descoberta */
+  .conteudo .desempenho .grafico .colunas .area-grafico .barras .descoberta {
+    width: 2.5rem;
+  }
+  /* Materias */
+  .conteudo .desempenho .grafico .colunas .area-grafico .barras .materias {
+    width: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .conteudo .parte_info_user .foto_user {
+    width: 10rem;
+    height: 10rem;
+  }
+  .conteudo .parte_salas ul li {
+    width: 10rem;
+  }
+  .conteudo .parte_salas ul li .img-materia {
+    width: 2rem;
+    height: 2rem;
+  }
+  .conteudo .parte_salas ul li .img-materia img {
+    width: 2rem;
+    height: 2rem;
+  }
+}

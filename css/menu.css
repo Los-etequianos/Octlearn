@@ -1,0 +1,195 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "louis cafe", sans-serif;
+  color: #000;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  transition: all 0.8s ease;
+}
+
+/* Menu geral  */
+.menu-geral {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 250px;
+  background: #fff;
+  transition: all 0.5s ease;
+  z-index: 100;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 50%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+  padding: 8px;
+  bottom: 0;
+}
+
+/* Header */
+.menu-geral header {
+  position: relative;
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Logo */
+.menu-geral header .imagem-texto .imagem img {
+  width: 8rem;
+}
+.menu-geral .imagem {
+  min-width: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Toggle */
+.menu-geral header .toggle {
+  position: absolute;
+  top: 3rem;
+  right: -25px;
+  transform: translateY(-50%) rotate(180deg);
+  height: 25px;
+  width: 25px;
+  font-size: 1.5rem;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Menu barra */
+.menu-geral .menu-barra {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* Menu */
+.menu-geral .menu-barra .menu {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.menu-geral .menu-barra .menu .menu-links{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.menu-geral .menu-barra .menu .menu-links li{
+  width: 100%;
+}
+
+.menu-geral li .icon {
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 60px;
+}
+
+.menu-geral li {
+  height: 50px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-geral li .icon,
+.menu-geral li .text {
+  color: #000;
+  transition: all 0.2s ease;
+}
+
+.menu-geral li a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all 0.4s ease;
+}
+
+.menu-geral li a:hover {
+  background: #ff1964;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 50%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+.menu-geral li a:hover .icon,
+.menu-geral li a:hover .text {
+  color: #fff;
+}
+
+/* Menu fechado */
+.menu-geral.fechado {
+  width: 88px;
+}
+.menu-geral.fechado li a {
+  justify-content: center;
+}
+.menu-geral.fechado header .imagem-texto .imagem img {
+  width: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-geral.fechado .text {
+  display: none;
+}
+
+.menu-geral.fechado header .toggle {
+  transform: translateY(-50%);
+}
+
+.menu-geral.fechado ~ .tela {
+  left: 88px;
+  width: calc(100% - 88px);
+  overflow: visible;
+}
+
+/* Tela e conteudo do site  */
+.tela {
+  position: relative;
+  left: 250px;
+  width: calc(100% - 250px);
+  height: 100vh;
+  transition: all 0.5s ease;
+}
+
+/* Root */
+:root {
+  /* Transições */
+  --tran-02: all 0.2s ease;
+  --tran-03: all 0.3s ease;
+  --tran-04: all 0.4s ease;
+  --tran-05: all 0.5s ease;
+}
+
+  /* Icone referente a aba da página */
+  /* .icone_tela{
+    width: 100%;
+    height: 5%;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+  }
+  .icone_tela .imagem i{
+    font-size: 2rem;
+  } */
