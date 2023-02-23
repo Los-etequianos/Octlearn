@@ -1,0 +1,217 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family: "louis cafe", sans-serif; */
+  font-family: "Shantell Sans", cursive;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  transition: all 0.8s ease;
+  overflow-x: hidden;
+}
+
+/* Icone referente a aba da página */
+.icone_tela {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #00ccbe;
+}
+.icone_tela .imagem i {
+  font-size: 2rem;
+}
+
+/* Conteudo */
+.conteudo {
+  width: 100%;
+  height: 90%;
+}
+/* Classificacao pessoal */
+.conteudo .info_classificacao {
+  width: 100%;
+  height: 24rem;
+  background: #00ccbe;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1rem solid #1da49a;
+}
+.conteudo .info_classificacao h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+}
+.conteudo .info_classificacao h1 {
+  font-size: 8rem;
+  font-weight: 800;
+  color: #fff;
+  /* font-family:'Shantell Sans', cursive; */
+}
+/* Botão compartilhar */
+.conteudo .info_classificacao .btn_compartilhar {
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.conteudo .info_classificacao .btn_compartilhar button {
+  width: 20rem;
+  height: 4rem;
+  border: none;
+  border-radius: 15px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.5rem;
+  background: rgb(217 217 217 / 37%);
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 50%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+/* Classificação sala  */
+.conteudo .classificacao_alunos {
+  width: 100%;
+  height: 165rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.conteudo .classificacao_alunos ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* Card Alunos */
+.conteudo .classificacao_alunos ul li {
+  width: 55rem;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 0 20px;
+  margin: 1rem;
+}
+.conteudo .classificacao_alunos ul li .nome-pontos h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0 0 10px 0;
+}
+.conteudo .classificacao_alunos ul li .nome-pontos span {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.conteudo .classificacao_alunos ul li .medalha i {
+  font-size: 2.5rem;
+}
+.conteudo .classificacao_alunos ul li .medalha .ouro {
+  color: #ffd33b;
+}
+.conteudo .classificacao_alunos ul li .medalha .prata {
+  color: #a09e9e;
+}
+.conteudo .classificacao_alunos ul li .medalha .bronze {
+  color: #b48c51;
+}
+/* Hover */
+.conteudo .info_classificacao .btn_compartilhar button:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+  transition: all 0.4s easy-in-out;
+}
+.conteudo .classificacao_alunos ul li:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+  transition: all 0.4s easy-in-out;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 50%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+/* Responsivo */
+@media screen and (max-width: 1120px) {
+  .conteudo .classificacao_alunos ul li {
+    width: 50rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .conteudo .classificacao_alunos ul li {
+    width: 45rem;
+  }
+}
+@media screen and (max-width: 850px) {
+  .conteudo .classificacao_alunos ul li {
+    width: 40rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  .conteudo .classificacao_alunos ul li {
+    width: 35rem;
+  }
+}
+@media screen and (max-width: 660px) {
+  .conteudo .classificacao_alunos ul li {
+    width: 30rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .conteudo .classificacao_alunos ul li {
+    width: 25rem;
+  }
+  .conteudo .classificacao_alunos ul li .nome-pontos h3 {
+    font-size: 1.2rem;
+  }
+  .conteudo .classificacao_alunos ul li .nome-pontos span {
+    font-size: 1rem;
+  }
+  .conteudo .classificacao_alunos ul li .medalha i {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .conteudo .classificacao_alunos ul li {
+    width: 20rem;
+  }
+  .conteudo .classificacao_alunos ul li .nome-pontos h3 {
+    font-size: 1rem;
+  }
+  .conteudo .classificacao_alunos ul li .nome-pontos span {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .conteudo .info_classificacao .btn_compartilhar button {
+    width: 15rem;
+  }
+  .conteudo .classificacao_alunos ul li {
+    width: 15rem;
+  }
+}
+@media screen and (max-width: 350px) {
+  .conteudo .info_classificacao h3 {
+    font-size: 1.5rem;
+  }
+  .conteudo .info_classificacao h1 {
+    font-size: 5rem;
+  }
+  .conteudo .info_classificacao .btn_compartilhar button {
+    width: 10rem;
+    font-size: 1rem;
+  }
+  .conteudo .classificacao_alunos ul li {
+    width: 10rem;
+  }
+  .conteudo .classificacao_alunos ul li .nome-pontos h3 {
+    font-size: 0.9rem;
+  }
+  .conteudo .classificacao_alunos ul li .nome-pontos span {
+    font-size: 0.8rem;
+  }
+  .conteudo .classificacao_alunos ul li .medalha i {
+    font-size: 1rem;
+  }
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Matérias - Octlearn</title>
+    <title>Salas - Octlearn</title>
     <!-- Logo -->
     <link
       rel="icon"
@@ -12,7 +12,7 @@
     />
     <!-- Links CSS -->
     <link rel="stylesheet" href="./css/menu.css" />
-    <link rel="stylesheet" href="./css/materias.css" />
+    <link rel="stylesheet" href="./css/salas.css" />
     <!-- Links externos  -->
     <script
       src="https://kit.fontawesome.com/026675cdf7.js"
@@ -108,110 +108,114 @@
     <main class="tela">
       <div class="icone_tela">
         <div class="imagem">
-          <i class="fa-solid fa-pen-to-square"></i>
+          <i class="fa-solid fa-users-between-lines icon"></i>
         </div>
       </div>
       <div class="conteudo">
-        <div class="materias">
+        <!-- Parte da busca das salas -->
+        <div class="area_pesquisa">
+          <div class="buscar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" placeholder="Buscar salas..." />
+          </div>
+        </div>
+        <div class="area_salas">
+          <!-- Lista de salas -->
           <ul>
+            <!-- Card da sala -->
             <li>
-              <a href="./Materias/artes.html">
-                <div class="imagem">
-                  <img src="./img/materias/Artes.png" />
+              <a href="#">
+                <div class="prof-materia">
+                  <h3>9°A - Artes</h3>
+                  <span>Professora: Renata Cavalcante</span>
                 </div>
-                <div class="nome_materia">Artes</div>
-                <div class="professor">
-                  <!-- <i class="fa-solid fa-circle-user icon"></i> -->
-                  <i class="fa-solid fa-chalkboard-user icon"></i>
-                  Renata Cavalcante 
+                <div class="img-trofeu">
+                  <img src="./img/materias/Artes.png" class="materia" />
+                  <i class="fa-solid fa-trophy"></i>
                 </div>
               </a>
             </li>
             <li>
-              <a href="./Materias/ciencias.html">
-                <div class="imagem">
-                  <img src="./img/materias/Ciencias.png" alt="" />
+              <a href="#">
+                <div class="prof-materia">
+                  <h3>9°A - Ciências</h3>
+                  <span>Professor: Mateus Souza</span>
                 </div>
-                <div class="nome_materia">Ciência</div>
-                <div class="professor">
-                  <i class="fa-solid fa-chalkboard-user icon"></i>
-                  Mateus Souza
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="./Materias/geografia.html">
-                <div class="imagem">
-                  <img src="./img/materias/Geografia.png" />
-                </div>
-                <div class="nome_materia">Geografia</div>
-                <div class="professor">
-                  <i class="fa-solid fa-chalkboard-user icon"></i>
-                  Olga Batista 
+                <div class="img-trofeu">
+                  <img src="./img/materias/Ciencias.png" class="materia" />
+                  <i class="fa-solid fa-trophy"></i>
                 </div>
               </a>
             </li>
             <li>
-              <a href="./Materias/historia.html">
-                <div class="imagem">
-                  <img
-                    src="./img/materias/Historia.png"
-                  />
+              <a href="#">
+                <div class="prof-materia">
+                  <h3>9°A - Geografia</h3>
+                  <span>Professora: Olga Batista</span>
                 </div>
-                <div class="nome_materia">História</div>
-                <div class="professor">
-                  <i class="fa-solid fa-chalkboard-user icon"></i>
-                  Tatiane Campos
+                <div class="img-trofeu">
+                  <img src="./img/materias/Geografia.png" class="materia" />
+                  <i class="fa-solid fa-trophy"></i>
                 </div>
               </a>
             </li>
             <li>
-              <a href="./Materias/portugues.html">
-                <div class="imagem">
-                  <img src="./img/materias/Portugues.png" />
+              <a href="#">
+                <div class="prof-materia">
+                  <h3>9°A - História</h3>
+                  <span>Professora: Tatiane Campos</span>
                 </div>
-                <div class="nome_materia">Lingua Portuguesa</div>
-                <div class="professor">
-                  <i class="fa-solid fa-chalkboard-user icon"></i>
-                  Marina de Oliveira
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="./Materias/matematica.html">
-                <div class="imagem">
-                  <img src="./img/materias/Matematica.png" />
-                </div>
-                <div class="nome_materia">Matemática</div>
-                <div class="professor">
-                  <i class="fa-solid fa-chalkboard-user icon"></i>
-                  Marcos Silva
+                <div class="img-trofeu">
+                  <img src="./img/materias/Historia.png" class="materia" />
+                  <i class="fa-solid fa-trophy"></i>
                 </div>
               </a>
             </li>
             <li>
-              <a href="./Materias/ingles.html">
-                <div class="imagem">
-                  <img
-                    src="./img/materias/Ingles.png"
-                  />
+              <a href="#">
+                <div class="prof-materia">
+                  <h3>9°A - Língua Portuguesa</h3>
+                  <span>Professora: Marina de Oliveira</span>
                 </div>
-                <div class="nome_materia">Inglês</div>
-                <div class="professor">
-                  <i class="fa-solid fa-chalkboard-user icon"></i>
-                  Antonio Mendes
+                <div class="img-trofeu">
+                  <img src="./img/materias/Portugues.png" class="materia" />
+                  <i class="fa-solid fa-trophy"></i>
                 </div>
               </a>
             </li>
             <li>
-              <a href="./Materias/espanhol.html">
-                <div class="imagem">
-                  <img src="./img/materias/Espanhol.png" />
+              <a href="#">
+                <div class="prof-materia">
+                  <h3>9°A - Matemática</h3>
+                  <span>Professor: Marcos Silva</span>
                 </div>
-                <div class="nome_materia">Espanhol</div>
-                <div class="professor">
-                  <i class="fa-solid fa-chalkboard-user icon"></i>
-                  Mariana Bernades 
+                <div class="img-trofeu">
+                  <img src="./img/materias/Matematica.png" class="materia" />
+                  <i class="fa-solid fa-trophy"></i>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="prof-materia">
+                  <h3>9°A - Inglês</h3>
+                  <span>Professor: Antônio Mendes</span>
+                </div>
+                <div class="img-trofeu">
+                  <img src="./img/materias/Ingles.png" class="materia" />
+                  <i class="fa-solid fa-trophy"></i>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="prof-materia">
+                  <h3>9°A - Espanhol</h3>
+                  <span>Professora: Mariana Bernades</span>
+                </div>
+                <div class="img-trofeu">
+                  <img src="./img/materias/Espanhol.png" class="materia" />
+                  <i class="fa-solid fa-trophy"></i>
                 </div>
               </a>
             </li>

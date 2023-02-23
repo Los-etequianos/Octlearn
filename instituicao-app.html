@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Perfil - Octlearn</title>
+    <title>Instituição - Octlearn</title>
     <!-- Logo -->
     <link
       rel="icon"
@@ -12,7 +12,7 @@
     />
     <!-- Links CSS -->
     <link rel="stylesheet" href="./css/menu.css" />
-    <link rel="stylesheet" href="./css/perfil.css">
+    <link rel="stylesheet" href="./css/instituicao.css" />
     <!-- Links externos  -->
     <script
       src="https://kit.fontawesome.com/026675cdf7.js"
@@ -89,7 +89,7 @@
                 <span class="text nav-text">Instituição</span>
               </a>
             </li>
-            <li class="nav-link"> 
+            <li class="nav-link">
               <a href="#" style="background: #ff1964">
                 <i
                   class="fa-solid fa-right-from-bracket icon"
@@ -99,7 +99,7 @@
                   >Voltar a tela principal</span
                 >
               </a>
-            </li>
+            </li> 
           </ul>
         </div>
       </div>
@@ -108,81 +108,61 @@
     <main class="tela">
       <div class="icone_tela">
         <div class="imagem">
-          <i class="fa-solid fa-circle-user"></i>
+          <i class="fa-solid fa-school"></i>
         </div>
       </div>
       <div class="conteudo">
-        <div class="parte_info_user">
-          <div class="foto_user">
-            <img src="./img/avatares/download20221201134512-removebg-preview.png" alt="">
+        <!-- Descrição breve sobre a instituição e imagem -->
+        <div class="descricao_escolar">
+          <div class="lado_esquerdo">
+            <div class="imagem_escolar">
+              <img
+                src="./img/imagens_genericas/Octlearn University.png"
+                alt="logo da Octlearn University"
+              />
+            </div>
           </div>
-          <div class="info">
-            <h3>Beatriz dos Santos Cavalcante</h3>
-            <span>ID: 0123456789</span>
+          <div class="lado_direito">
+            <!-- Descrição escolar -->
+            <div class="texto_escolar">
+              <p>
+                A Octlearn University é uma instituição de ensino fundamental e
+                médio dedicada a oferecer uma educação de alta qualidade, com
+                uma abordagem prática e inovadora. Com um corpo docente
+                altamente qualificado e experiente, a Octlearn University busca
+                formar alunos preparados para enfrentar os desafios do mercado
+                de trabalho e acadêmico, incentivando a criatividade, o
+                pensamento crítico e o empreendedorismo. 
+              </p>
+              <p class="segundoP">
+                Localizada em um campus
+                moderno e bem equipado, a Octlearn University oferece cursos em
+                diversas áreas do conhecimento, incluindo tecnologia, ciências
+                sociais, negócios e o ensino básico. Com uma comunidade
+                acadêmica vibrante e acolhedora, a Octlearn University é um
+                lugar onde os estudantes podem crescer pessoal e
+                profissionalmente, alcançando seus objetivos e realizando seus
+                sonhos.
+              </p>
+            </div>
           </div>
         </div>
-        <div class="parte_salas">
-          <span>Suas salas:</span>
-          <ul>
-            <div class="parte_esquerda">
-              <li>
-                9°A - Matemática
-                <div class="img-materia">
-                  <img src="./img/materias/Matematica.png">
-                </div>
-              </li>
-              <li>
-                9°A - Português
-                <div class="img-materia">
-                  <img src="./img/materias/Portugues.png">
-                </div>
-              </li>
-            </div>
-            <div class="parte_direita">
-              <li>
-                9°A - Geografia
-                <div class="img-materia">
-                  <img src="./img/materias/Geografia.png">
-                </div>
-              </li>
-              <li>
-                9°A - Ciência
-                <div class="img-materia">
-                  <img src="./img/materias/Ciencias.png">
-                </div>
-              </li>
-            </div>
-          </ul>
-        </div>
-        <div class="desempenho">
-          <span class="titulo">Acertos</span>
-          <div class="grafico">
-            <div class="colunas">
-              <div class="escala-y">
-                <span>
-                  Acertos
-                </span>
-              </div>
-              <div class="area-grafico">
-                <div class="barras barra-1">
-                  <p class="text">12 pontos</p>
-                  <div class="quiz"></div>
-                  <span>Quiz</span>
-                </div>
-                
-                <div class="barras">
-                  <p>6 pontos</p>
-                  <div class="descoberta"></div>
-                  <span>Descoberta</span>
-                </div>
-                
-                <div class="barras">
-                  <p>19 pontos</p>
-                  <div class="materias"></div>
-                  <span>Materia</span>
-                </div>
-              </div>
-            </div>
+        <!-- Informações complementares da instituição -->
+        <div class="informacao_escolar">
+          <!-- Plano estudantil -->
+          <div class="plano_escolar">
+            <h3>Plano Estudantil:</h3>
+            <span>Anual ou Semestral</span>
+          </div>
+          <!-- Quantidade de docentes -->
+          <div class="qtnd_docentes">
+            <h3>Quantidade de docentes da institução:</h3>
+            <span>100</span>
+          </div>
+          <!-- Direção da escola -->
+          <div class="direcao_escolar">
+            <h3>Diretor(a) da instituição:</h3>
+            <span>Marina Gonçalves Dias</span>
           </div>
         </div>
       </div>

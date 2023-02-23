@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Perfil - Octlearn</title>
+    <title>Jogos - Octlearn</title>
     <!-- Logo -->
     <link
       rel="icon"
@@ -12,7 +12,7 @@
     />
     <!-- Links CSS -->
     <link rel="stylesheet" href="./css/menu.css" />
-    <link rel="stylesheet" href="./css/perfil.css">
+    <link rel="stylesheet" href="./css/jogos.css" />
     <!-- Links externos  -->
     <script
       src="https://kit.fontawesome.com/026675cdf7.js"
@@ -89,7 +89,7 @@
                 <span class="text nav-text">Instituição</span>
               </a>
             </li>
-            <li class="nav-link"> 
+            <li class="nav-link">
               <a href="#" style="background: #ff1964">
                 <i
                   class="fa-solid fa-right-from-bracket icon"
@@ -108,81 +108,84 @@
     <main class="tela">
       <div class="icone_tela">
         <div class="imagem">
-          <i class="fa-solid fa-circle-user"></i>
+          <i class="fa-solid fa-gamepad icon"></i>
         </div>
       </div>
       <div class="conteudo">
-        <div class="parte_info_user">
-          <div class="foto_user">
-            <img src="./img/avatares/download20221201134512-removebg-preview.png" alt="">
+        <div class="conteudos_jogos">
+          <!-- Lado esquerdo da tela -->
+          <div class="lado_esquerdo">
+            <!-- Lista de jogos -->
+            <ul>
+              <!-- Link, imagem e icone -->
+              <li>
+                <a href="#">
+                  <span class="fogo"
+                    >Jogo do fogo <i class="fa-solid fa-fire"></i
+                  ></span>
+                  <img
+                    src="./img/imagens_genericas/faixa5-removebg-preview (2).png"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="quizes"
+                    >Quizes <i class="fa-solid fa-question"></i
+                  ></span>
+                  <img
+                    src="./img/imagens_genericas/faixa4-removebg-preview (1).png"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="puzzle3"
+                    >Jogo 3 <i class="fa-solid fa-puzzle-piece"></i
+                  ></span>
+                  <img
+                    src="./img/imagens_genericas/faixa3-removebg-preview (1).png"
+                  />
+                </a>
+              </li>
+            </ul>
           </div>
-          <div class="info">
-            <h3>Beatriz dos Santos Cavalcante</h3>
-            <span>ID: 0123456789</span>
-          </div>
-        </div>
-        <div class="parte_salas">
-          <span>Suas salas:</span>
-          <ul>
-            <div class="parte_esquerda">
+          <!-- Lado direito da tela -->
+          <div class="lado_direito">
+            <!-- Lista de jogos -->
+            <ul>
               <li>
-                9°A - Matemática
-                <div class="img-materia">
-                  <img src="./img/materias/Matematica.png">
-                </div>
+                <!-- Link, imagem e icone -->
+                <a href="#">
+                  <span class="puzzle4"
+                    ><i class="fa-solid fa-puzzle-piece"></i> Jogo 4</span
+                  >
+                  <img
+                    src="./img/imagens_genericas/faixa4-removebg-preview (1).png"
+                  />
+                </a>
               </li>
               <li>
-                9°A - Português
-                <div class="img-materia">
-                  <img src="./img/materias/Portugues.png">
-                </div>
-              </li>
-            </div>
-            <div class="parte_direita">
-              <li>
-                9°A - Geografia
-                <div class="img-materia">
-                  <img src="./img/materias/Geografia.png">
-                </div>
+                <a href="#">
+                  <span class="puzzle5"
+                    ><i class="fa-solid fa-dice"></i> Jogo 5</span
+                  >
+                  <img
+                    src="./img/imagens_genericas/faixa3-removebg-preview (1).png"
+                  />
+                </a>
               </li>
               <li>
-                9°A - Ciência
-                <div class="img-materia">
-                  <img src="./img/materias/Ciencias.png">
-                </div>
+                <a href="#">
+                  <span class="puzzle6"
+                    ><i class="fa-solid fa-dice"></i> Jogo 6</span
+                  >
+                  <img
+                    src="./img/imagens_genericas/faixa5-removebg-preview (2).png"
+                  />
+                </a>
               </li>
-            </div>
-          </ul>
-        </div>
-        <div class="desempenho">
-          <span class="titulo">Acertos</span>
-          <div class="grafico">
-            <div class="colunas">
-              <div class="escala-y">
-                <span>
-                  Acertos
-                </span>
-              </div>
-              <div class="area-grafico">
-                <div class="barras barra-1">
-                  <p class="text">12 pontos</p>
-                  <div class="quiz"></div>
-                  <span>Quiz</span>
-                </div>
-                
-                <div class="barras">
-                  <p>6 pontos</p>
-                  <div class="descoberta"></div>
-                  <span>Descoberta</span>
-                </div>
-                
-                <div class="barras">
-                  <p>19 pontos</p>
-                  <div class="materias"></div>
-                  <span>Materia</span>
-                </div>
-              </div>
-            </div>
+            </ul>
           </div>
         </div>
       </div>

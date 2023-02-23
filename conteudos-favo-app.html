@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Perfil - Octlearn</title>
+    <title>Conteúdos Favoritos - Octlearn</title>
     <!-- Logo -->
     <link
       rel="icon"
@@ -12,7 +12,7 @@
     />
     <!-- Links CSS -->
     <link rel="stylesheet" href="./css/menu.css" />
-    <link rel="stylesheet" href="./css/perfil.css">
+    <link rel="stylesheet" href="./css/conteudo-fav.css" />
     <!-- Links externos  -->
     <script
       src="https://kit.fontawesome.com/026675cdf7.js"
@@ -89,7 +89,7 @@
                 <span class="text nav-text">Instituição</span>
               </a>
             </li>
-            <li class="nav-link"> 
+            <li class="nav-link">
               <a href="#" style="background: #ff1964">
                 <i
                   class="fa-solid fa-right-from-bracket icon"
@@ -104,86 +104,60 @@
         </div>
       </div>
     </nav>
-
     <main class="tela">
       <div class="icone_tela">
         <div class="imagem">
-          <i class="fa-solid fa-circle-user"></i>
+          <i class="fa-solid fa-heart icon"></i>
         </div>
       </div>
       <div class="conteudo">
-        <div class="parte_info_user">
-          <div class="foto_user">
-            <img src="./img/avatares/download20221201134512-removebg-preview.png" alt="">
-          </div>
-          <div class="info">
-            <h3>Beatriz dos Santos Cavalcante</h3>
-            <span>ID: 0123456789</span>
-          </div>
-        </div>
-        <div class="parte_salas">
-          <span>Suas salas:</span>
+        <!-- Lista de matérias favoritas -->
+        <div class="lista_materias_fav">
           <ul>
-            <div class="parte_esquerda">
-              <li>
-                9°A - Matemática
-                <div class="img-materia">
-                  <img src="./img/materias/Matematica.png">
-                </div>
-              </li>
-              <li>
-                9°A - Português
-                <div class="img-materia">
-                  <img src="./img/materias/Portugues.png">
-                </div>
-              </li>
-            </div>
-            <div class="parte_direita">
-              <li>
-                9°A - Geografia
-                <div class="img-materia">
-                  <img src="./img/materias/Geografia.png">
-                </div>
-              </li>
-              <li>
-                9°A - Ciência
-                <div class="img-materia">
-                  <img src="./img/materias/Ciencias.png">
-                </div>
-              </li>
-            </div>
+            <!-- Card da matéria -->
+            <li>
+              <div class="texto">
+                <h3>História - Grécia e Roma</h3>
+                <span>Tópicos, periodos, acontecimentos marcantes...</span>
+              </div>
+              <i class="fa-solid fa-heart"></i>
+            </li>
+            <li>
+              <div class="texto">
+                <h3>Geografia - Sociedade e cultura</h3>
+                <span>Acontecimentos, marcos sociais, características...</span>
+              </div>
+              <i class="fa-solid fa-heart"></i>
+            </li>
+            <li>
+              <div class="texto">
+                <h3>Ciências - Diversidade da Vida</h3>
+                <span>Evolução, tipos, características...</span>
+              </div>
+              <i class="fa-solid fa-heart"></i>
+            </li>
+            <li>
+              <div class="texto">
+                <h3>Ciências - Reino dos seres vivos</h3>
+                <span>Evolução, aspectos únicos, características...</span>
+              </div>
+              <i class="fa-solid fa-heart"></i>
+            </li>
+            <li>
+              <div class="texto">
+                <h3>História - Pré-história e Antiguidade Oriental</h3>
+                <span>Evolução, aspectos, características...</span>
+              </div>
+              <i class="fa-solid fa-heart"></i>
+            </li>
+            <li>
+              <div class="texto">
+                <h3>Matemática - Equações e Sistemas</h3>
+                <span>Fórmulas, cálculos, exercícios...</span>
+              </div>
+              <i class="fa-solid fa-heart"></i>
+            </li>
           </ul>
-        </div>
-        <div class="desempenho">
-          <span class="titulo">Acertos</span>
-          <div class="grafico">
-            <div class="colunas">
-              <div class="escala-y">
-                <span>
-                  Acertos
-                </span>
-              </div>
-              <div class="area-grafico">
-                <div class="barras barra-1">
-                  <p class="text">12 pontos</p>
-                  <div class="quiz"></div>
-                  <span>Quiz</span>
-                </div>
-                
-                <div class="barras">
-                  <p>6 pontos</p>
-                  <div class="descoberta"></div>
-                  <span>Descoberta</span>
-                </div>
-                
-                <div class="barras">
-                  <p>19 pontos</p>
-                  <div class="materias"></div>
-                  <span>Materia</span>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </main>
