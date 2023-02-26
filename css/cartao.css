@@ -1,4 +1,7 @@
 /* ------- Cartões ------- */
+*{
+  font-family: "louis cafe", sans-serif;
+}
 html{
   scroll-behavior: smooth;
 }

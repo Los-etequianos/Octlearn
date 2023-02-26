@@ -2,7 +2,7 @@ const menu = document.querySelector('nav');
 
 function activeScrool(){
     menu.classList.toggle('ativo', scrollY > 550);
-    menu.classList.toggle('roxo', scrollY > 2640);
+    menu.classList.toggle('roxo', scrollY > 2620);
 }
 
 window.addEventListener('scroll', activeScrool);
