@@ -9,11 +9,11 @@
   html{
     scroll-behavior: smooth;
   }
-  
+  body{
+    overflow-x: hidden;
+    }
+
 /* MENU */
-body{
-overflow-x: hidden;
-}
 
 /* ------- NavBar ------- */
 nav{
