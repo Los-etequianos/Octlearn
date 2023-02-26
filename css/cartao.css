@@ -1,0 +1,297 @@
+/* ------- Cartões ------- */
+html{
+  scroll-behavior: smooth;
+}
+.titulo_card{
+  width: 100%;
+}
+
+.titulo_card h3{
+  text-align: center;
+  padding: 2em;
+}
+
+section{
+  display: none;
+}
+
+  .cartao{
+    width: 100vw;
+    height: auto;
+    overflow: hidden;
+    font-family: Helvetica, sans-serif;
+    color: rgb(211, 211, 211);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .container{
+    width: 16.10vw;
+    height: 27.08vw;
+    perspective: 800px;
+    margin: 20px;
+  }
+  
+  .container:hover > .card{
+    cursor: pointer;
+    transform: rotateY(180deg);
+  }
+  
+  .card{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+  }
+  
+  .front, .back{
+    width: 100%;
+    height:  100%;
+    border-radius: 1rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+    backface-visibility: hidden;
+  }
+  
+  .front{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    
+  }
+  
+  .back{
+    background-color: #838383;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    
+  }
+
+  /* ::-webkit-scrollbar{
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track{
+    background: #f1f1f1;
+    border-radius: 15px;
+  }
+  ::-webkit-scrollbar-thumb{
+    background: #6e93f7;
+    border-radius: 1    5px;
+  }
+  ::-webkit-scrollbar-thumb:hover{
+    background: #4070f4;
+  } */
+
+  .container .cards{
+    display: flex;
+    flex: 0 0 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 12px;
+    background: #fff;
+    scroll-snap-align: start;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+  }
+
+  .cards{
+    display: flex;
+    flex: 0 0 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+  }
+  
+  .cards .image{
+    height: 10.24vw;
+    width: 10.24vw;
+    padding: 4px;
+    border-radius: 50%;
+  }
+  
+  .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    
+  }
+  .cards h2{
+    margin-top: 15px;
+    color: #333;
+    font-size: calc(6px + 1vw);
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .cards p{
+    margin-top: 4px;
+    font-size: calc(2px + 1vw);
+    font-weight: 400;
+    color: #333;
+    text-align: center;
+  }
+
+
+  /* Cards Mobile */
+  .profile{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .profile .profile-img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    padding: 2px;
+    margin-bottom: 10px;
+  }
+
+  .profile .profile-img img{
+    height: 120px;
+    width: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+  }
+
+  .modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+    
+  }
+  .modalDialog:target {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .modalDialog > div{
+    display: flex;
+    flex: 0 0 100%;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: 85vh;
+    position: relative;
+    margin: 10% auto;
+    padding: 30px;
+    border-radius: 20px;
+    background: #fff;
+    scroll-snap-align: start;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    
+  }
+
+  /* box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+    backface-visibility: hidden;
+    
+  .back{
+    background-color: #838383;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    background-color: red;
+  } */
+
+  .close {
+    background: #0693e3;
+    color: #FFFFFF;
+    line-height: 15px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: auto;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+  }
+
+  /* Responsividade */
+  @media (max-width: 1024px){
+    /* .hero{
+      height: 100vh;
+      -webkit-background-size: 100vw;
+      -moz-background-size: 100vw;
+      -o-background-size: 100vw;
+      background-size: 100vw;
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../imagens/banner_1_ipad.png) center no-repeat fixed;
+      background-size: cover;
+      background-position: center no-repeat fixed;
+    } */
+  }
+  @media (max-width: 999px){
+
+    /* Cartões */
+    .cartao{
+      display: none;
+    }
+
+    section{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    section a{
+      padding: 20px;
+    }
+
+    .cards .image{
+      height: 170px;
+      width: 170px;
+    }
+
+    .cards h2{
+      font-size: 1.8em;
+    }
+
+    .cards p{
+      font-size: 1.2em;
+    }
+  }
+
+  /*  */
+  @media (max-width: 800px){
+    nav{
+      background-color: white;
+    }
+    .mobile-menu div{
+      background: black;
+    }
+  }

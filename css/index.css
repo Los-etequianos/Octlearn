@@ -1,0 +1,389 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+  
+  main{
+    width: 100%;
+    min-height: 80vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    overflow-x: hidden;
+  }
+  
+  /* NavBar */
+  .capa{
+    height: 100vh;
+    -webkit-background-size: 100vw;
+    -moz-background-size: 100vw;
+    -o-background-size: 100vw;
+    background-size: 100vw;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../imagens/banner_1_ipad.png) center no-repeat fixed;
+    /* background-position-x: right; */
+    background-size: cover;
+  }
+  
+  .conteudo{
+    width: 100%;
+    height: 100%;
+  }
+
+    /*SCROLLBAR Estilizada*/
+ /* ::-webkit-scrollbar{
+  width: 15px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background: linear-gradient( #f55389,#412973,#00ccbe);
+  box-shadow: inset 2px 2px 2px rgba(2535,255,255,0.25),
+  inset -2px -2px -2px rgba(0,0,0,0.25);
+}
+::-webkit-scrollbar-track {
+  border-radius: 20px;
+  background: linear-gradient(to right, #e6e6e7, #e6e6e7 1px, #dddbe0 1px,
+  #dddbe0);
+} */
+
+/* Parte começo do projeto */
+.sessao_introducao_projeto{
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .sessao_introducao_projeto .lado_esquerdo{
+    margin: 2rem 5rem;
+    width: 70%;
+    height: 90%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .sessao_introducao_projeto .lado_esquerdo .parte_texto h1{
+    width: 100%;
+    color: #FF1964;
+    margin: 0 20px;
+    font-size: 2.7rem;
+    font-weight: bolder;
+  }
+  
+  .sessao_introducao_projeto .lado_esquerdo .parte_texto h3{
+    color: #FF1964;
+    width: 100%;
+    margin: 10px 20px 0;
+    text-align: left;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+  
+  .sessao_introducao_projeto .lado_esquerdo .area_botao{
+    height: 3em;
+    display: flex;
+    align-self: flex-start;
+    margin: 2rem 1rem;
+  }
+  
+  .sessao_introducao_projeto .lado_esquerdo .area_botao button{ 
+    background: #FF1964;
+    width: 20em;
+    height: 3.5em;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.3s ease;
+  }
+  
+  .sessao_introducao_projeto .lado_esquerdo .area_botao button:hover{ 
+    transform: scale(1.03);
+    background: #f55389;
+    cursor: pointer;
+  }
+  
+  .sessao_introducao_projeto .lado_esquerdo .area_botao button a{ 
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  .sessao_introducao_projeto .lado_direito{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .sessao_introducao_projeto .lado_direito .parte_imagem{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+    justify-content: center;
+  }
+ .conteudo .sessao_introducao_projeto .lado_direito .parte_imagem img{
+  position: absolute;
+  animation: animateUser 3s ease-out infinite;
+  object-fit: cover;
+  }
+
+  @keyframes animateUser{
+    50%{
+      transform: translateY(20px);
+    }
+  }
+
+
+  /*Parte Resumo do Projeto*/
+  .sessao_resumo_projeto{
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .sessao_resumo_projeto .lado_esquerdo2{
+    margin: 1rem 5rem;
+    width: 100%;
+    height: 50%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .sessao_resumo_projeto .lado_esquerdo2 .parte_texto2 h3{
+    width: 90%;
+    margin: 20px 20px 0;
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  .sessao_resumo_projeto .lado_esquerdo2 .imagem-binoculos img{
+    width: 7rem;
+    height: 7rem;
+    display: flex;
+    float: right;
+    padding-bottom: 0.2rem;
+    position: absolute;
+  }
+  .sessao_resumo_projeto .lado_esquerdo2 .parte_botao{
+    height: 3em;
+    width: 10rem;
+    display: flex;
+    align-self: flex-start;
+    margin: 1rem 0 0 1.3rem;
+  }
+  
+  .sessao_resumo_projeto .lado_esquerdo2 .parte_botao button{ 
+    background: #412973;
+    width: 15em;
+    height: 3em;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.3s ease;
+  }
+  
+  .sessao_resumo_projeto .lado_esquerdo2 .parte_botao button:hover{ 
+    transform: scale(1.03);
+    background: #9166ec;
+    cursor: pointer;
+  }
+  
+  .sessao_resumo_projeto .lado_esquerdo2 .parte_botao button a{ 
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  /*Card do se liga na dica*/
+
+
+  .sessao_resumo_projeto .parte_card{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 45px;
+  }
+
+  .sessao_resumo_projeto .parte_card .card_trans h3{
+    width: 90%;
+    padding: 3rem 0 0 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  .sessao_resumo_projeto .parte_card .card_trans{
+    width: 20rem;
+    height: 25rem;
+    background-color: #fff;
+    border-radius: 20px;
+    border: 0.1em solid #00ccbe;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+
+  /* Hover - Card */
+  .sessao_resumo_projeto .parte_card .card_trans:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+  }
+
+  .sessao_resumo_projeto .parte_card .card_cor{
+    background-color: #00ccbe;
+    position: relative;
+    margin: -10px;
+    height: 4rem;
+  }
+  .sessao_resumo_projeto .parte_card .card_cor h3{
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0 0 3rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .sessao_resumo_projeto .parte_card .card_cor img{
+    width: 1rem;
+  }
+  .sessao_resumo_projeto .parte_card .card_trans .botao_card button{ 
+    background: #00ccbe;
+    width: 15em;
+    height: 3em;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    margin: 1rem 0 0 3.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.3s ease;
+  }
+  
+  .sessao_resumo_projeto .parte_card .botao_card button:hover{ 
+    transform: scale(1.03);
+    background: #74fcf3;
+    cursor: pointer;
+  }
+  
+  .sessao_resumo_projeto .parte_card .botao_card button a{ 
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+/*Card responsivo*/
+
+@media (max-width: 500px){
+  .sessao_resumo_projeto .parte_card .card_trans{
+    width: 17rem;
+    height: 23rem;
+  }
+  .sessao_resumo_projeto .parte_card .card_trans h3{
+    font-size: 1rem;
+  }
+   .sessao_resumo_projeto .parte_card .card_trans .botao_card button{
+    align-self: center;
+    width: 12rem;
+    margin: 1.2rem 2.5rem;
+   }
+}
+
+/*Parte começo responsivo*/
+
+@media (max-width: 1010px){
+  /* Sessão sobre o projeto */
+
+  .sessao_introducao_projeto{
+    width: 100%;
+    height: 23rem;
+  }
+
+  .sessao_introducao_projeto .lado_esquerdo .area_botao{
+      margin: 2rem 0 0 0;
+      align-self: center;
+  }
+  .sessao_introducao_projeto .lado_direito{
+      display: none;
+  }
+  .sessao_introducao_projeto .lado_direito .parte_imagem{
+    width: 100%;
+    justify-content: center;
+  }
+  .sessao_introducao_projeto .lado_esquerdo{
+    width: 100%;
+    height: 60%;
+    margin: 0;
+}
+  .sessao_introducao_projeto .lado_esquerdo .parte_texto h3{
+      margin: 0;
+      text-align: center;
+      padding: 15px;
+  }
+  .sessao_introducao_projeto .lado_esquerdo .parte_texto h1{
+    margin: 0;
+    text-align: center;
+    padding: 15px;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 830px){
+  /* Sessão sobre o projeto */
+  .sessao_introducao_projeto .lado_esquerdo{
+      width: 100%;
+      margin: 0;
+  }
+  .sessao_introducao_projeto .lado_esquerdo .area_botao button{
+    width: 12rem;
+  }
+  .sessao_introducao_projeto.lado_esquerdo .area_botao button a{
+    font-size: 0.8rem;
+  }
+}
+  /*Parte resumo e card se liga na dica fi responsivo*/
+@media (max-width: 1180px){
+  .sessao_resumo_projeto{
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .sessao_resumo_projeto .lado_esquerdo2{
+      width: 100%;
+      margin: 0;
+      padding-bottom: 3rem;
+  }
+  .sessao_resumo_projeto .lado_esquerdo2 .parte_botao{
+    margin: 1rem 0;
+    align-self: center;
+  }
+  .sessao_resumo_projeto .lado_esquerdo2 .imagem-binoculos img{
+    position: relative;
+    width: 4rem;
+    height: 4rem;
+  }
+  .sessao_resumo_projeto .lado_esquerdo2 .parte_texto2 h3{
+    text-align: center;
+    padding: 15px;
+  }
+}
+
+    
+  

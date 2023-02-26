@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Louis George Café', sans-serif;
+    
+
+  }
+  main{
+    width: 100%;
+    min-height: 80vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow-x: hidden;
+  }
+
+  /* NavBar */
+  .capa{
+    height: 100vh;
+    -webkit-background-size: 100vw;
+    -moz-background-size: 100vw;
+    -o-background-size: 100vw;
+    background-size: 100vw;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../imagens/banner_projeto.png) center no-repeat fixed;
+    /* background-position-x: right; */
+    background-size: cover;
+  }
+
+  .container{
+    width: 100%;
+    height: 100%;
+  }
+  
+  /*Objetivo do Projeto*/
+
+  .objetivo_projeto{
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .objetivo_projeto .lado_esquerdo{
+    margin: 2rem 5rem;
+    width: 40%;
+    height: 90%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .objetivo_projeto .lado_esquerdo .texto h3{
+    width: 100%;
+    margin: 10px 20px 0;
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  .objetivo_projeto .lado_esquerdo .texto .titulo h3{
+    display: block;
+    font-size: 1.2rem;
+    position: relative;
+  }
+
+  .titulo::before{
+    position: absolute;
+    content: '';
+    height: 1.3rem;
+    width: 0.4rem;
+    background-color: #f55389;
+  }
+
+  /*Lado direito*/
+  .objetivo_projeto .lado_direito{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+  }
+  .objetivo_projeto .lado_direito .texto2 h3{
+    width: 100%;
+    margin: 20px 0;
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  /*Parte sobre o logo*/
+  .sobre_logo{
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .sobre_logo .lado_esquerdo{
+    margin: 2rem 7rem;
+    width: 100%;
+    height: 90%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .sobre_logo .lado_esquerdo .texto h3{
+    width: 100%;
+    margin: 10px 20px 0;
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  .sobre_logo .lado_esquerdo .texto .titulo h3{
+    display: block;
+    font-size: 1.2rem;
+    position: relative;
+  }
+.sobre_logo .lado_direito{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sobre_logo .lado_direito .parte_imagem{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    overflow: hidden;
+    justify-content: center;
+    gap: 1rem;
+  }
+   .sobre_logo .lado_direito .parte_imagem .polvo1{
+    position: absolute;
+    margin: 0 30rem 15rem 0;
+   }
+  .sobre_logo .lado_direito .parte_imagem .polvo1 img{
+    width: 25rem; 
+  
+  }
+  .sobre_logo .lado_direito .parte_imagem .polvo2 img{
+    width: 25rem;
+  }
+
+  /*Sobre a paleta de cores*/
+
+  .sobre_paleta{
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .sobre_paleta .lado_esquerdo{
+    margin: 2rem 7rem;
+    width: 100%;
+    height: 90%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .sobre_paleta .lado_esquerdo .texto h3{
+    width: 100%;
+    margin: 10px 20px 0;
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  .sobre_paleta .lado_esquerdo .texto .titulo h3{
+    display: block;
+    font-size: 1.2rem;
+    position: relative;
+  }
+  .sobre_paleta .lado_esquerdo .imagem_paleta img{
+    width: 23rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+  }
+
+   /*Sobre a paleta de cores - Card*/
+
+   .sobre_paleta .lado_direito{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+   .sobre_paleta .lado_direito .parte_card{
+    width: 20rem;
+    height: 23rem;
+    background-color: #fff;
+    border: 0.6px solid #412973;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.5s;
+   }
+   .sobre_paleta .lado_direito .parte_card h3{
+    width: 90%;
+    padding: 3rem 0 0 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+   }
+   .sobre_paleta .lado_direito .parte_card .card_cor{
+    background-color: #412973;
+    margin: -10px;
+    height: 4rem;
+   }
+   .sobre_paleta .lado_direito .parte_card .card_cor h3{
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0 0 3rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+   }
+   .sobre_paleta .lado_direito .parte_card .card_cor img{
+    width: 1rem;
+   }
+
+   /*RESPONSIVO*/
+
+   @media(max-width: 1222px){
+    .objetivo_projeto{
+      width: 100%;
+      height: 100%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .sobre_logo{
+      width: 100%;
+      height: 100%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .sobre_paleta{
+      width: 100%;
+      height: 100%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .objetivo_projeto .lado_esquerdo{
+      width: 80%;
+      margin: 2rem;
+    }
+    .objetivo_projeto .lado_direito{
+      width: 80%;
+      margin-left: 3rem;
+    }
+    .sobre_logo .lado_esquerdo{
+      width: 80%;
+      margin: 2rem;
+    }
+    .sobre_logo .lado_direito{
+      display: none;
+    }
+    .sobre_logo .lado_direito .parte_imagem{
+      width: 100%;
+      justify-content: center;
+    }
+    .sobre_paleta .lado_esquerdo{
+      width: 80%;
+      margin: 2rem;
+    }
+    .sobre_paleta .lado_direito{
+      width: 100%;
+      margin: 2rem;
+    }
+}
+@media(max-width: 500px){
+  .sobre_paleta .lado_esquerdo .imagem_paleta img{
+    width: 15rem;
+    height: 7rem;
+  }
+  .sobre_paleta .lado_direito .parte_card{
+    width: 18rem;
+    height: 19rem;
+  }
+  .sobre_paleta .lado_direito .parte_card h3{
+    font-size: 1.05rem;
+    padding: 2rem 0 0 2rem;
+  }
+}

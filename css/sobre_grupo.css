@@ -1,0 +1,507 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Louis George Café', sans-serif;
+
+  }
+  main{
+    width: 100%;
+    min-height: 80vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    overflow-x: hidden;
+  }
+
+  /* NavBar */
+  .capa{
+    height: 100vh;
+    -webkit-background-size: 100vw;
+    -moz-background-size: 100vw;
+    -o-background-size: 100vw;
+    background-size: 100vw;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../imagens/ipad.png) center no-repeat fixed;
+    /* background-position-x: right; */
+    background-size: cover;
+  }
+  
+  .container{
+    width: 100%;
+    height: 100%;
+  }
+
+  /*Parte sobre a instituição e imagem de nossa linda etec*/
+  .parte_instituicao{
+    width: 95%;
+    height: 30rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .parte_instituicao .lado_esquerdo{
+    margin: 2rem 5rem;
+    height: 90%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .parte_instituicao .lado_esquerdo .parte_texto h3{
+    width: 100%;
+    margin: 10px 20px 0;
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  .parte_instituicao .lado_direito{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .parte_instituicao .lado_direito .parte_imagem{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+    justify-content: center;
+    align-self: center;
+  }
+  .parte_instituicao .lado_direito .parte_imagem img{
+    border-radius: 10px;
+  }
+
+  .parte_instituicao .parte_texto .lado_esquerdo .titulo h3{
+    display: block;
+    font-size: 1.2rem;
+    position: relative;
+  }
+
+  .titulo::before{
+    position: absolute;
+    content: '';
+    height: 1.3rem;
+    width: 0.4rem;
+    background-color: #f55389;
+  }
+
+  /*Parte título conheça sobre os integrantes*/
+  .conheca_integrantes{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .conheca_integrantes h3{
+    font-size: 1.3rem;
+  }
+
+  /*Parte foto e textinho sobre os integrantes*/
+
+  .sobre_grupo_tudo{
+    width: 100%;
+    margin: 3rem 0 0;
+  }
+
+  /*IMAGEM ESQUERDO E TEXTO DIREITO*/
+
+  .sobre_grupo_tudo .quem_somos{
+    width: 95%;
+    margin: 2em;
+    display: flex;
+    justify-content: space-around;
+    gap: 1em;
+  }
+  .sobre_grupo_tudo .quem_somos .lado_esquerdo2{
+    width: 50%;
+    height: 25em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .sobre_grupo_tudo .quem_somos .lado_esquerdo2 .imagem_esquerdo{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .sobre_grupo_tudo .quem_somos .lado_esquerdo2 .imagem_esquerdo img{
+    width: 30em;
+    object-fit: cover;
+    animation: animateUser2 3s ease-out infinite;
+  }
+  @keyframes animateUser2{
+    50%{
+      transform: translateY(-30px);
+    }
+  }
+  .sobre_grupo_tudo .quem_somos .lado_direito2{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .sobre_grupo_tudo .quem_somos .lado_direito2 .conteudo_texto{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 50px;
+  }
+  .sobre_grupo_tudo .quem_somos .lado_direito2 .conteudo_texto h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  /*IMAGEM DIREITO E TEXTO ESQUERDO*/
+
+
+  .sobre_grupo_tudo .quem_somos .lado_direito3{
+    width: 50%;
+    height: 25em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .sobre_grupo_tudo .quem_somos .lado_direito3 .imagem_direito{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .sobre_grupo_tudo .quem_somos .lado_direito3 .imagem_direito img{
+    width: 29em;
+    object-fit: cover;
+    animation: animateUser 3s ease-out infinite;
+  }
+  @keyframes animateUser{
+    50%{
+      transform: translateY(-30px);
+    }
+  }
+  .sobre_grupo_tudo .quem_somos .lado_esquerdo3{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .sobre_grupo_tudo .quem_somos .lado_esquerdo3 .conteudo_texto2{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 50px;
+  }
+  .sobre_grupo_tudo .quem_somos .lado_esquerdo3 .conteudo_texto2 h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .sobre_grupo_tudo .quem_somos .lado_esquerdo3 .conteudo_texto2 img{
+    width: 1.7rem;
+  }
+
+   /*Parte - Cards*/
+   /*Card Esquerdo*/
+   .sobre_grupo_tudo .cards_tudo{
+    width: 95%;
+    height: 30rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 1rem;
+   }
+   .sobre_grupo_tudo .cards_tudo .card_esquerdo{
+    margin: 1rem 5rem;
+    width: 50%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+   .sobre_grupo_tudo .cards_tudo .card_esquerdo .card1{
+    width: 20rem;
+    height: 23rem;
+    background-color: #fff;
+    border: 0.6px solid #00ccbe;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.5s;
+   }
+   .sobre_grupo_tudo .cards_tudo .card_esquerdo .card1:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+   }
+   .sobre_grupo_tudo .cards_tudo .card_esquerdo .card1 h3{
+    width: 90%;
+    padding: 3rem 0 0 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+   }
+   .sobre_grupo_tudo .cards_tudo .card_esquerdo .card1 img{
+    width: 1.2rem;
+    height: 1rem;
+   }
+   .sobre_grupo_tudo .cards_tudo .card_esquerdo .card_cor{
+    background-color: #00ccbe;
+    margin: -10px;
+    height: 4rem;
+   }
+   .sobre_grupo_tudo .cards_tudo .card_esquerdo .card_cor h3{
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0 0 3rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+   }
+   .sobre_grupo_tudo .cards_tudo .card_esquerdo .card_cor img{
+    width: 1.2rem;
+   }
+   .sobre_grupo_tudo .cards_tudo .card_esquerdo .botao_card button{
+    background: #00ccbe;
+    width: 17em;
+    height: 3em;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    margin: 2rem 0 0 3rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   }
+   .sobre_grupo_tudo .cards_tudo .card_esquerdo .botao_card button:hover{
+    transform: scale(1.03);
+    transition:all 0.3s ease;
+    background: #74fcf3;
+    cursor: pointer;
+   }
+   .sobre_grupo_tudo .cards_tudo .card_esquerdo .botao_card button a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 500;
+   }
+
+   /*Card Direito*/
+   .sobre_grupo_tudo .cards_tudo .card_direito{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+   .sobre_grupo_tudo .cards_tudo .card_direito .card2{
+    width: 23rem;
+    height: 23rem;
+    background-color: #fff;
+    border: 0.6px solid #ff1964;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.5s;
+   }
+   .sobre_grupo_tudo .cards_tudo .card_direito .card2 h3{
+    width: 90%;
+    padding: 3rem 0 0 2rem;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 800;
+   }
+   .sobre_grupo_tudo .cards_tudo .card_direito .card_cor2{
+    background-color: #ff1964;
+    margin: -10px;
+    height: 4rem;
+   }
+   .sobre_grupo_tudo .cards_tudo .card_direito .card2:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+   }
+   .sobre_grupo_tudo .cards_tudo .card_direito .card_cor2 img{
+    width: 1.2rem;
+   }
+   .sobre_grupo_tudo .cards_tudo .card_direito .card_cor2 h3{
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0 0 3rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+   }
+   .sobre_grupo_tudo .cards_tudo .card_direito .emojis{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2.5rem;
+   }
+   .sobre_grupo_tudo .cards_tudo .card_direito .emojis img{
+    width: 2.5rem;
+    margin: 10px;
+    cursor: pointer;
+   }
+   .sobre_grupo_tudo .cards_tudo .card_direito .emojis .img_riso{
+    width: 3rem;
+   }
+
+   .fantasma{
+    display: none;
+   }
+
+   /*RESPONSIVO*/
+
+   @media (max-width: 1024px){
+    /*Parte da instituição*/
+    .parte_instituicao{
+      width: 100%;
+      height: 100%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+     .parte_instituicao .lado_esquerdo .parte_texto h3{
+      width: 95%;
+     }
+     .parte_instituicao .lado_direito{
+      display: none;
+     }
+     .parte_instituicao .lado_direito .parte_imagem{
+      width: 100%;
+      justify-content: center;
+    }
+    /*Conteúdo dos integrantes do grupo*/
+    .sobre_grupo_tudo .quem_somos{
+      width: 95%;
+      height: 100%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .sobre_grupo_tudo .quem_somos .lado_direito2 {
+      width: 100%; 
+      display: flex;
+      text-align: center;
+    }
+    .sobre_grupo_tudo .quem_somos .lado_esquerdo3{
+      width: 100%; 
+      display: flex;
+      text-align: center;
+    }
+    /*Cards responsivo*/
+    .sobre_grupo_tudo .cards_tudo{
+      width: 100%;
+      height: 100%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+   }
+
+   /*Site responsivo para celular*/
+
+   @media(max-width: 535px){
+     /*Conteúdo dos integrantes do grupo*/
+    .sobre_grupo_tudo .quem_somos {
+      margin: 0;
+    }
+
+    .fantasma{
+      display: flex;
+     }
+
+     .fantasma_lorena{
+      display: none;
+     }
+
+    /*Parte da instituição*/
+
+    .parte_instituicao .lado_esquerdo{
+      margin: 2rem 1rem;
+      display: flex;
+    }
+    .parte_instituicao .lado_esquerdo .parte_texto {
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+    .parte_instituicao .lado_esquerdo .parte_texto h3{
+      font-size: 1.1rem;
+    }
+
+     /*Conteúdo dos integrantes do grupo*/
+
+     .sobre_grupo_tudo .quem_somos .lado_esquerdo2 .imagem_esquerdo img{
+      width: 25rem;
+      height: 100%;
+      margin-left: 2rem;
+     }
+  
+     .sobre_grupo_tudo .quem_somos .lado_direito3 .imagem_direito img{
+      width: 25rem;
+      height: 100%;
+      margin-left: 2rem;
+     }
+      .sobre_grupo_tudo .quem_somos .lado_direito2 .conteudo_texto{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+
+      }
+      .sobre_grupo_tudo .quem_somos .lado_esquerdo3 .conteudo_texto2{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      .sobre_grupo_tudo .quem_somos .lado_direito2 .conteudo_texto h3{
+        font-size: 1.1rem;
+      }
+      .sobre_grupo_tudo .quem_somos .lado_esquerdo3 .conteudo_texto2 h3{
+        font-size: 1.1rem;
+      }
+
+      /*Titulo "Conheça os integrantes" responsivo*/
+
+      .conheca_integrantes{
+        width: 95%;
+        height: 100%;
+        margin: 2rem;
+        align-items: center;
+        justify-content: center;
+      }
+      .conheca_integrantes h3{
+        text-align: center;
+        margin-right: 1.6rem;
+      }
+       /*Cards responsivo*/
+      .sobre_grupo_tudo .cards_tudo .card_direito .card2{
+        width: 18rem;
+        height: 18rem;
+      }
+      .sobre_grupo_tudo .cards_tudo .card_direito .card2 h3{
+        font-size: 1rem;
+      }
+      .sobre_grupo_tudo .cards_tudo .card_direito .emojis{
+        padding: 1rem;
+       }
+      .sobre_grupo_tudo .cards_tudo .card_direito .emojis img{
+        width: 1.5rem;
+      }
+      .sobre_grupo_tudo .cards_tudo .card_direito .emojis .img_riso{
+        width: 2rem;
+      }
+      .sobre_grupo_tudo .cards_tudo .card_esquerdo .card1{
+        width: 16rem;
+        height: 20rem;
+      }
+      .sobre_grupo_tudo .cards_tudo .card_esquerdo .card1 h3{
+        font-size: 1rem;
+      }
+      .sobre_grupo_tudo .cards_tudo .card_esquerdo .botao_card button{
+       width: 12em;
+       height: 2.5em;
+        margin: 1rem 3rem;
+      }
+      .sobre_grupo_tudo .cards_tudo .card_esquerdo .botao_card button a{
+        font-size: 0.8rem;
+      }
+   }
