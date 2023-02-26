@@ -411,7 +411,7 @@ main {
 .sessao_resumo_projeto .lado_esquerdo2 .parte_botao button a {
   text-decoration: none;
   color: #fff;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 500;
 }
 
@@ -487,7 +487,7 @@ main {
 .sessao_resumo_projeto .parte_card .botao_card button a {
   text-decoration: none;
   color: #fff;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 500;
 }
 /*Card responsivo*/
@@ -498,7 +498,7 @@ main {
     height: 23rem;
   }
   .sessao_resumo_projeto .parte_card .card_trans h3 {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   .sessao_resumo_projeto .parte_card .card_trans .botao_card button {
     align-self: center;
@@ -553,7 +553,7 @@ main {
     margin: 0;
   }
   .sessao_introducao_projeto .lado_esquerdo .area_botao button {
-    width: 12rem;
+    width: 14rem;
   }
   .sessao_introducao_projeto.lado_esquerdo .area_botao button a {
     font-size: 0.8rem;

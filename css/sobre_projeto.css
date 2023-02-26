@@ -28,7 +28,7 @@ nav {
   background: #fff;
 }
 
-.menu.roxo {
+.menu.mudar_roxo {
   background: #412973;
 }
 
@@ -134,7 +134,7 @@ nav ul li a:hover {
     color: #000;
   }
 
-  .menu.roxo > .nav-list {
+  .menu.mudar_roxo > .nav-list {
     background: #412973;
   }
   .menu.roxo > .nav-list a {
