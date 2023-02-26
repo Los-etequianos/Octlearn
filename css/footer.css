@@ -48,7 +48,7 @@ footer{
   
   
   #instagram{
-    background-image: url('../imgs/icons8-instagram-32.png');
+    background-image: url('../img/imagens_gerais/icons8-instagram-32.png');
     background-repeat: no-repeat;
     height: 32px;
     width: 32px;
@@ -56,14 +56,14 @@ footer{
   }
   
   .rodape-3 #instagram:hover{
-    background-image: url('../imgs/icons8-instagram-32.png');
+    background-image: url('../img/imagens_gerais/icons8-instagram-32.png');
     height: 32px;
     width: 32px;
     transform: scale(1.1);
   }
   
   #gmail{
-    background-image: url('../imgs/icons8-gmail-32.png');
+    background-image: url('../img/imagens_gerais/icons8-gmail-32.png');
     background-repeat: no-repeat;
     height: 32px;
     width: 32px;
@@ -71,7 +71,7 @@ footer{
   }
   
   #gmail:hover{
-    background-image: url('../imgs/icons8-gmail-32.png');
+    background-image: url('../img/imagens_gerais/icons8-gmail-32.png');
     height: 32px;
     width: 32px;
     transform: scale(1.1);

@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   
   }
   html{
     scroll-behavior: smooth;
@@ -25,7 +26,7 @@
     -moz-background-size: 100vw;
     -o-background-size: 100vw;
     background-size: 100vw;
-    background: url(../img/banners/banner_index.gif) center no-repeat fixed;
+    background: url(../img/banners/banner_index.png) center no-repeat fixed;
     /* background-position-x: right; */
     background-size: cover;
   }
