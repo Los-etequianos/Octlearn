@@ -25,7 +25,7 @@
     -moz-background-size: 100vw;
     -o-background-size: 100vw;
     background-size: 100vw;
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../imagens/banner_1_ipad.png) center no-repeat fixed;
+    background: url(../img/banners/banner_index.gif) center no-repeat fixed;
     /* background-position-x: right; */
     background-size: cover;
   }

@@ -94,7 +94,7 @@ nav ul li a:hover{
 .mobile-menu div{
     width: 32px;
     height: 2px;
-    background: white;
+    /* background: white; */
     margin: 8px;
     transition: 0.3s;
 }
@@ -108,7 +108,7 @@ nav ul li a:hover{
       -moz-background-size: 100vw;
       -o-background-size: 100vw;
       background-size: 100vw;
-      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../imagens/banner_1_ipad.png) center no-repeat fixed;
+      background: url(../img/banners/banner_index.gif) center no-repeat fixed;
       background-size: cover;
       background-position: center no-repeat fixed;
     }
@@ -172,7 +172,7 @@ nav ul li a:hover{
 
   @media (max-width: 535px){
     .capa{
-      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../imagens/banner_1_mobile.png) center no-repeat fixed;
+      background: url(../imagens/banner_1_mobile.png) center no-repeat fixed;
       background-size: cover;
     }
   }
