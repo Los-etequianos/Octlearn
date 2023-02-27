@@ -98,7 +98,7 @@ nav ul li a:hover {
   background: #000;
 }
 
-.menu.roxo > .mobile-menu div {
+.menu.roxo_grupo > .mobile-menu div {
   background: #fff;
 }
 
@@ -130,10 +130,10 @@ nav ul li a:hover {
     color: #000;
   }
 
-  .menu.roxo > .nav-list {
+  .menu.roxo_grupo > .nav-list {
     background: #412973;
   }
-  .menu.roxo > .nav-list a {
+  .menu.roxo_grupo > .nav-list a {
     color: #fff;
   }
 
