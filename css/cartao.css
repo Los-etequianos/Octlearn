@@ -291,11 +291,3 @@ section{
   }
 
   /*  */
-  @media (max-width: 800px){
-    nav{
-      background-color: white;
-    }
-    .mobile-menu div{
-      background: black;
-    }
-  }
