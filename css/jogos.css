@@ -2,8 +2,8 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "louis cafe", sans-serif;
-  /* font-family:'Shantell Sans', cursive;  */
+  /* font-family: "louis cafe", sans-serif; */
+  font-family:'Shantell Sans', cursive; 
 }
 
 body {
@@ -63,52 +63,9 @@ body {
   height: 9rem;
   text-decoration: none;
 }
-.conteudo .conteudos_jogos .lado_esquerdo ul li a span {
-  font-size: 2rem;
-  color: #fff;
-  font-weight: 600;
-  z-index: 100;
-}
-.conteudo .conteudos_jogos .lado_esquerdo ul li a i {
-  font-size: 2rem;
-  color: #fff;
-  font-weight: 600;
-}
+
 
 /* Nome dos jogos */
-.conteudo .conteudos_jogos .lado_esquerdo ul li a .fogo {
-  position: absolute;
-  top: 24%;
-  left: 16%;
-}
-.conteudo .conteudos_jogos .lado_esquerdo ul li a .quizes {
-  position: absolute;
-  top: 52%;
-  left: 19%;
-}
-.conteudo .conteudos_jogos .lado_esquerdo ul li a .puzzle3 {
-  position: absolute;
-  top: 80%;
-  left: 19%;
-}
-.conteudo .conteudos_jogos .lado_direito ul li a .puzzle4 {
-  position: absolute;
-  top: 24%;
-  right: 19%;
-  z-index: 2;
-}
-.conteudo .conteudos_jogos .lado_direito ul li a .puzzle5 {
-  position: absolute;
-  top: 52%;
-  right: 19%;
-  z-index: 2;
-}
-.conteudo .conteudos_jogos .lado_direito ul li a .puzzle6 {
-  position: absolute;
-  top: 80%;
-  right: 19%;
-  z-index: 2;
-}
 
 /* Lado direito */
 .conteudo .conteudos_jogos .lado_direito {
@@ -135,33 +92,10 @@ body {
   height: 9rem;
   text-decoration: none;
 }
-.conteudo .conteudos_jogos .lado_direito ul li a span {
-  font-size: 2rem;
-  color: #fff;
-  font-weight: 600;
-}
-.conteudo .conteudos_jogos .lado_direito ul li a i {
-  font-size: 2rem;
-  color: #fff;
-  font-weight: 600;
-}
-.conteudo .conteudos_jogos .lado_direito ul li a img {
-  transform: rotate(180deg);
-}
 
 /* Hover */
 .conteudo .conteudos_jogos .lado_esquerdo ul li a img:hover{
   transform: scale(1.02);
-  cursor: pointer;
-  transition: all 0.4s easy-in-out;
-}
-.conteudo .conteudos_jogos .lado_esquerdo ul li a span:hover{
-  transform: scale(1.02);
-  cursor: pointer;
-  transition: all 0.4s easy-in-out;
-}
-.conteudo .conteudos_jogos .lado_direito ul li a img:hover{
-  transform: scale(1.02) rotate(180deg);
   cursor: pointer;
   transition: all 0.4s easy-in-out;
 }
@@ -171,33 +105,14 @@ body {
   cursor: pointer;
   transition: all 0.4s easy-in-out;
 }
+.conteudo .conteudos_jogos .lado_direito ul li a img:hover{
+  transform: scale(1.02);
+  cursor: pointer;
+  transition: all 0.4s easy-in-out;
+}
 
 /* Responsividade */
-@media screen and (max-width: 1200px) {
-  .conteudo .conteudos_jogos .lado_esquerdo ul li a .fogo {
-    left: 13%;
-  }
-}
 @media screen and (max-width: 940px) {
-  .conteudo .conteudos_jogos .lado_esquerdo ul li a .fogo {
-    top: 29%;
-    left: 11%;
-  }
-  .conteudo .conteudos_jogos .lado_esquerdo ul li a .quizes {
-    top: 54%;
-  }
-  .conteudo .conteudos_jogos .lado_esquerdo ul li a .puzzle3 {
-    top: 78%;
-  }
-  .conteudo .conteudos_jogos .lado_direito ul li a .puzzle4 {
-    top: 29%;
-  }
-  .conteudo .conteudos_jogos .lado_direito ul li a .puzzle5 {
-    top: 54%;
-  }
-  .conteudo .conteudos_jogos .lado_direito ul li a .puzzle6 {
-    top: 78%;
-  }
   .conteudo .conteudos_jogos .lado_esquerdo ul li a {
     width: 40rem;
     height: 10rem;
@@ -215,188 +130,7 @@ body {
     height: 100%;
   }
 }
-@media screen and (max-width: 920px) {
 
-  .conteudo .conteudos_jogos .lado_esquerdo ul li a .fogo {
-    top: 21%;
-  }
-  .conteudo .conteudos_jogos .lado_esquerdo ul li a .quizes {
-    top: 50%;
-  }
-  .conteudo .conteudos_jogos .lado_esquerdo ul li a .puzzle3 {
-    top: 79%;
-  }
-  .conteudo .conteudos_jogos .lado_direito ul li a .puzzle4 {
-    top: 21%;
-  }
-  .conteudo .conteudos_jogos .lado_direito ul li a .puzzle5 {
-    top: 50%;
-  }
-  .conteudo .conteudos_jogos .lado_direito ul li a .puzzle6 {
-    top: 79%;
-  }
-}
-@media screen and (max-width: 915px) {
-
-  .conteudo .conteudos_jogos .lado_esquerdo ul li a .fogo {
-    top: 20%;
-  }
-  .conteudo .conteudos_jogos .lado_esquerdo ul li a .quizes {
-    top: 53%;
-  }
-  .conteudo .conteudos_jogos .lado_esquerdo ul li a .puzzle3 {
-    top: 78%;
-  }
-  .conteudo .conteudos_jogos .lado_direito ul li a .puzzle4 {
-    top: 20%;
-  }
-  .conteudo .conteudos_jogos .lado_direito ul li a .puzzle5 {
-    top: 53%;
-  }
-  .conteudo .conteudos_jogos .lado_direito ul li a .puzzle6 {
-    top: 78%;
-  }
-}
-@media screen and (max-width: 913px) {
-
-  .conteudo .conteudos_jogos .lado_esquerdo ul li a .fogo {
-    top: 28%;
-  }
-  .conteudo .conteudos_jogos .lado_direito ul li a .puzzle4 {
-    top: 28%;
-  }
-
-}
-
-@media screen and (max-width: 855px) {
-
-  .conteudo .conteudos_jogos .lado_esquerdo ul li a .fogo {
-    top: 21%;
-  }
-  .conteudo .conteudos_jogos .lado_esquerdo ul li a .quizes {
-    top: 50%;
-  }
-  .conteudo .conteudos_jogos .lado_esquerdo ul li a .puzzle3 {
-    top: 79%;
-  }
-  .conteudo .conteudos_jogos .lado_direito ul li a .puzzle4 {
-    top: 21%;
-  }
-  .conteudo .conteudos_jogos .lado_direito ul li a .puzzle5 {
-    top: 50%;
-  }
-  .conteudo .conteudos_jogos .lado_direito ul li a .puzzle6 {
-    top: 79%;
-  }
-}
-@media screen and (max-width: 840px) {
-  .conteudo .conteudos_jogos .lado_esquerdo ul li a span {
-    font-size: 1.6rem;
-  }
-  .conteudo .conteudos_jogos .lado_esquerdo ul li a i {
-    font-size: 1.6rem;
-  }
-  .conteudo .conteudos_jogos .lado_direito ul li a span {
-    font-size: 1.6rem;
-  }
-  .conteudo .conteudos_jogos .lado_direito ul li a i {
-    font-size: 1.6rem;
-  }
-  .conteudo .conteudos_jogos .lado_esquerdo ul li a .fogo {
-    top: 29%;
-  }
-  .conteudo .conteudos_jogos .lado_esquerdo ul li a .quizes {
-    top: 53%;
-  }
-  .conteudo .conteudos_jogos .lado_esquerdo ul li a .puzzle3 {
-    top: 78%;
-  }
-  .conteudo .conteudos_jogos .lado_direito ul li a .puzzle4 {
-    top: 29%;
-  }
-  .conteudo .conteudos_jogos .lado_direito ul li a .puzzle5{
-    top: 53%;
-  }
-  .conteudo .conteudos_jogos .lado_direito ul li a .puzzle6 {
-    top: 78%;
-  }
-}
-@media screen and (max-width: 750px) {
-
-  .conteudo .conteudos_jogos .lado_esquerdo ul li a .fogo {
-    top: 21%;
-  }
-  .conteudo .conteudos_jogos .lado_esquerdo ul li a .quizes {
-    top: 50%;
-  }
-  .conteudo .conteudos_jogos .lado_esquerdo ul li a .puzzle3 {
-    top: 79%;
-  }
-  .conteudo .conteudos_jogos .lado_direito ul li a .puzzle4 {
-    top: 21%;
-  }
-  .conteudo .conteudos_jogos .lado_direito ul li a .puzzle5 {
-    top: 50%;
-  }
-  .conteudo .conteudos_jogos .lado_direito ul li a .puzzle6 {
-    top: 79%;
-  }
-}
-@media screen and (max-width: 730px) {
-
-  .conteudo .conteudos_jogos .lado_esquerdo ul li a .fogo {
-    top: 19%;
-  }
-  .conteudo .conteudos_jogos .lado_direito ul li a .puzzle4 {
-    top: 19%;
-  }
-
-}
-@media screen and (max-width: 720px) {
-  .conteudo .conteudos_jogos .lado_esquerdo ul li a span {
-    font-size: 1.3rem;
-  }
-  .conteudo .conteudos_jogos .lado_esquerdo ul li a i {
-    font-size: 1.3rem;
-  }
-  .conteudo .conteudos_jogos .lado_direito ul li a span {
-    font-size: 1.3rem;
-  }
-  .conteudo .conteudos_jogos .lado_direito ul li a i {
-    font-size: 1.3rem;
-  }
-  .conteudo .conteudos_jogos .lado_esquerdo ul li a .fogo {
-    top: 26%;
-  }
-  .conteudo .conteudos_jogos .lado_esquerdo ul li a .quizes {
-    top: 53%;
-  }
-  .conteudo .conteudos_jogos .lado_direito ul li a .puzzle4 {
-    top: 26%;
-  }
-  .conteudo .conteudos_jogos .lado_direito ul li a .puzzle6 {
-    top: 79%;
-  }
-  .conteudo .conteudos_jogos .lado_direito ul li a .puzzle5 {
-    top: 53%;
-  }
-}
-@media screen and (max-width: 680px) {
-  .conteudo .conteudos_jogos .lado_esquerdo ul li a .fogo {
-    top: 24%;
-  }
-  .conteudo .conteudos_jogos .lado_direito ul li a .puzzle4 {
-    top: 24%;
-  }
-}
-@media screen and (max-width: 660px) {
-  .conteudo .conteudos_jogos .lado_esquerdo ul li a .fogo {
-    top: 22%;
-  }
-  .conteudo .conteudos_jogos .lado_direito ul li a .puzzle4 {
-    top: 22%;
-  }
-}
 @media screen and (max-width: 600px) {
   .conteudo .conteudos_jogos {
     flex-direction: column;
@@ -410,9 +144,6 @@ body {
   .conteudo .conteudos_jogos .lado_direito {
     width: 100%;
     height: 50%;
-  }
-  .conteudo .conteudos_jogos .lado_direito ul li a img {
-    transform: rotate(0);
   }
   .conteudo .conteudos_jogos .lado_esquerdo ul li a {
     width: 25rem;
@@ -428,118 +159,24 @@ body {
     height: 5rem;
     object-fit: contain;
   }
-  .conteudo .conteudos_jogos .lado_esquerdo ul li a .fogo {
-    top: 16%;
-    left: 34%;
-  }
-  .conteudo .conteudos_jogos .lado_esquerdo ul li a .quizes {
-    top: 31%;
-    left: 40%;
-  }
-  .conteudo .conteudos_jogos .lado_esquerdo ul li a .puzzle3 {
-    top: 45%;
-    left: 40%;
-  }
-  .conteudo .conteudos_jogos .lado_direito ul li a .puzzle4 {
-    top: 61%;
-    left: 40%;
-  }
-  .conteudo .conteudos_jogos .lado_direito ul li a .puzzle5 {
-    top: 76%;
-    left: 40%;
-  }
-  .conteudo .conteudos_jogos .lado_direito ul li a .puzzle6 {
-    top: 90%;
-    left: 40%;
-  }
 }
+@media screen and (max-width: 350px) {
 
-@media screen and (max-width: 480px) {
-  .conteudo .conteudos_jogos .lado_esquerdo {
-    width: 100%;
-    height: 90%;
-  }
-  .conteudo .conteudos_jogos .lado_direito {
-    width: 100%;
-    height: 90%;
-  }
   .conteudo .conteudos_jogos .lado_esquerdo ul li a img {
-    width: 15rem;
+    width: 12rem;
+
   }
   .conteudo .conteudos_jogos .lado_direito ul li a img {
-    width: 15rem;
-  }
-  .conteudo .conteudos_jogos .lado_esquerdo ul li a .fogo {
-    left: 26%;
-  }
-  .conteudo .conteudos_jogos .lado_direito ul li a .puzzle4 {
-    top: 62%;
-    left: 35%;
-  }
-  .conteudo .conteudos_jogos .lado_direito ul li a .puzzle5 {
-    left: 35%;
-  }
-  .conteudo .conteudos_jogos .lado_direito ul li a .puzzle6 {
-    left: 35%;
+    width: 12rem;
   }
 }
-@media screen and (max-width: 380px) {
-  .conteudo .conteudos_jogos .lado_esquerdo ul li a .fogo {
-    left: 21%;
-  }
-  .conteudo .conteudos_jogos .lado_esquerdo ul li a .quizes {
-    left: 30%;
-  }
-  .conteudo .conteudos_jogos .lado_esquerdo ul li a .puzzle3 {
-    left: 30%;
-  }
-  .conteudo .conteudos_jogos .lado_direito ul li a .puzzle4 {
-    left: 30%;
-  }
-  .conteudo .conteudos_jogos .lado_direito ul li a .puzzle5 {
-    left: 30%;
-  }
-  .conteudo .conteudos_jogos .lado_direito ul li a .puzzle6 {
-    left: 30%;
-  }
-}
-@media screen and (max-width: 320px) {
-  .conteudo .conteudos_jogos .lado_esquerdo ul li a span {
-    font-size: 1rem;
-  }
-  .conteudo .conteudos_jogos .lado_esquerdo ul li a i {
-    font-size: 1rem;
-  }
-  .conteudo .conteudos_jogos .lado_direito ul li a span {
-    font-size: 1rem;
-  }
-  .conteudo .conteudos_jogos .lado_direito ul li a i {
-    font-size: 1rem;
-  }
+@media screen and (max-width: 300px) {
+
   .conteudo .conteudos_jogos .lado_esquerdo ul li a img {
-    width: 11rem;
+    width: 9rem;
+
   }
   .conteudo .conteudos_jogos .lado_direito ul li a img {
-    width: 11rem;
-  }
-  .conteudo .conteudos_jogos .lado_esquerdo ul li a .fogo {
-    left: 21%;
-  }
-  .conteudo .conteudos_jogos .lado_esquerdo ul li a .quizes {
-    left: 30%;
-  }
-  .conteudo .conteudos_jogos .lado_esquerdo ul li a .puzzle3 {
-    left: 30%;
-  }
-  .conteudo .conteudos_jogos .lado_direito ul li a .puzzle4 {
-    left: 30%;
-  }
-  .conteudo .conteudos_jogos .lado_direito ul li a .puzzle5 {
-    left: 30%;
-  }
-  .conteudo .conteudos_jogos .lado_direito ul li a .puzzle6 {
-    left: 30%;
+    width: 9rem;
   }
 }
-
-/* Responsividade altura */

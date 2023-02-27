@@ -159,7 +159,7 @@ body {
 }
 
 .menu-geral.fechado ~ .tela {
-  left: 88px;
+  left: 80px;
   width: calc(100% - 80px);
   overflow: visible;
 }
