@@ -53,7 +53,7 @@
 }
   
 .dropzone {
-    background-image: url(/imgs/caverna.png);
+    background-image: url(./imgs/caverna.png);
     background-size: cover;
     
     width: 50em;
