@@ -278,7 +278,7 @@ main {
   width: 100%;
   color: #ff1964;
   margin: 0 20px;
-  font-size: 2.7rem;
+  font-size: 2.5rem;
   font-weight: bolder;
 }
 
@@ -431,7 +431,7 @@ main {
   width: 90%;
   padding: 3rem 0 0 2rem;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 .sessao_resumo_projeto .parte_card .card_trans {
