@@ -187,7 +187,7 @@ nav ul li a:hover {
 }
 @media (max-width: 535px){
   .capa{
-    background: url(../imagens/banner_1_mobile.png) center no-repeat fixed;
+    background: url(../img/banners/banner_1_mobile.png) center no-repeat fixed;
     background-size: cover;
   }
 }
