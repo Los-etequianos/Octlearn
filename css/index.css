@@ -108,9 +108,9 @@ nav ul li a:hover {
 
 /* Responsividade */
 @media (max-width: 1024px) {
-  nav {
+  /* nav {
     background: #ff914d;
-  }
+  } */
   .nav-list {
     position: fixed;
     top: 0;
