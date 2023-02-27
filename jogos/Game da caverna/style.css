@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.explicacao{
+    background-color: #00ccbe;
+    display: flex;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Shantell Sans", cursive;
+    color: white;
+
+    padding: 50px;
+    margin: 10px 25%;
+    border-radius: 10px;
+}
+
+#fim{
+    display: none;
+}
+
+#fim a{
+    color: white;
+}
+
+#fim a:hover{
+    color: #412973;
+}
+
+.tabela {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 20px;
+    z-index: 0;
+  }
+  
+.gravetos {
+    padding: 10px;
+    margin: 10px 0;
+
+    border: solid 2px black;
+    border-radius: 10px;
+
+    position: static;
+    height: 80px;
+}
+  
+.dropzone {
+    background-image: url(/imgs/caverna.png);
+    background-size: cover;
+    
+    width: 50em;
+    height: 30em;
+
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-items: center;
+}
+
+.apoio{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+}
+
+.fogo {
+    display: none;
+}
+
+.fogo img{
+    width: auto;
+    height: 300px;
+}
+
+.f1, .f2{
+    margin: 0 50%;
+    padding: 10px;
+}
+
+.drag-img{
+    width: 150px;
+    height: auto;
+}
+
+.drag-img, .dropzone {
+    transition: 0.5s;
+}
+
+/* Aparecem quando o js aciona */
+.is-dragging {
+    cursor: move;
+    opacity: 0.3;
+}
+
+.start {
+    opacity: 0.7;
+}
+
+.fogueira{
+    position: absolute;
+    top: 23em;
+    left: 40%;
+}
+
+.gvt-fogueira{
+    width: 15em;
+    height: auto;
+}
+
+#gvt1, #gvt2, #gvt3, #gvt4, #gvt5, #fire{
+    display: none;
+}
+
+#gvt1{
+    margin-top: 150px;
+}
+#gvt2{
+    margin-top: 40px;
+}
+#gvt3{
+    margin-top: 40px;
+}
+#gvt4{
+    margin-top: 40px;
+}
+#gvt5{
+    margin-top: 40px;
+}
+
+.display-none{
+    display: none;
+}
+
+.display-block{
+    display: block;
+}
+
+@media(max-width:824px){
+    .dropzone {
+        width: 30em;
+        height: 30em;
+    }
+
+    .drag-img{
+        width: 100px;
+        height: auto;
+    }
+
+    .gvt-fogueira{
+        width: 12em;
+        height: auto;
+    }
+
+    .fogueira{
+        top: 60%;
+    }
+
+    .explicacao{
+        font-size: 25px;
+        padding: 30px;
+        margin: 40px;
+    }
+}
+
+@media(max-width:502px){
+    .dropzone {
+        width: 20em;
+        height: 20em;
+    }
+
+    .drag-img{
+        width: 70px;
+        height: auto;
+    }
+
+    .gvt-fogueira{
+        width: 9em;
+    }
+
+    .fogueira{
+        top: 45%;
+    }
+}
+
+@media(max-width:300px){
+    .gravetos{
+        height: 100px;
+    }
+}
