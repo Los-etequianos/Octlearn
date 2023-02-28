@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: "louis cafe", sans-serif;
+}
+
+.container{
+    display: flex;
+    margin: 20px 40px;
+}
+
+.table{
+    overflow-y: scroll;
+    height: 38em;
+}
+
+.el{
+    font-size: 23px;
+    margin: 20px 100px;
+    padding-bottom: 20px;
+
+    display: flex;
+    gap: 50px;
+
+    border-bottom: solid black 1px;
+}
+
+#el-1, #el-2, #el-3{
+    display: none;
+}
+
+.usado{
+    width: 38%;
+}
+
+.curi{
+    width: 30%;
+}
+
+.nao-metal{
+    border: solid 2px green;
+    background-color: greenyellow;
+
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 7px;
+
+    width: 100px;
+    height: 90px;
+}
+
+.gas-nobre{
+    border: solid 2px red;
+    background-color: #ec9191;
+
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 7px;
+
+    width: 100px;
+    height: 90px;
+}
+
+.metal-alcalino{
+    border: solid 2px blue;
+    background-color: #7575ff;
+
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 7px;
+
+    width: 100px;
+    height: 90px;
+}
+
+.metal-alcalino-terroso{
+    border: solid 2px yellow;
+    background-color: #ffff8a;
+
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 7px;
+
+    width: 100px;
+    height: 90px;
+}
+
+.semimetal{
+    border: solid 2px orangered;
+    background-color: orange;
+
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 7px;
+
+    width: 100px;
+    height: 90px;
+}
+
+.card-el{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.card span{
+	font-size: 15px;
+	margin-left: -90px;
+}

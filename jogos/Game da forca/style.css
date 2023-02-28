@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    width: 100vw;
+    height: 90vh;
+    margin-top: 10px;
+    background-color: #00ccbe;
+    font-family: "Shantell Sans", cursive;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#imagem{
+    background-image: url("./img/forca.png");
+    background-repeat: no-repeat;
+    width: 234px;
+    height: 272px;
+}
+
+#palavra-secreta{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    margin-top: 30px;
+}
+
+.letras{
+    width: 40px;
+    text-align: center;
+    border-bottom: 2px solid #412973;
+    color: white;
+    padding: 2px;
+    margin: 0 2px;
+}
+
+#teclado{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.teclas button{
+    width: 50px;
+    height: 50px;
+    border: 1px solid #412973;
+    border-radius: 5px;
+    margin: 4px 2px;
+    font-size: 25px;
+    color: #ff1964;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 0px 2px 8px black;
+}
+
+.teclas button:hover{
+    transform: scale(1.2);
+}
+
+.teclas button::disabled{
+    cursor: not-allowed;
+}
+
+#categoria{
+    color: #412973;
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+@media (max-width: 542px){
+    .teclas button{
+        width: 35px;
+        height: 35px;
+        font-size: 1em;
+    }
+
+    #categoria{
+        font-size:30px;
+    }
+}
+
+@media (max-width: 400px){
+    .teclas button{
+        width: 23px;
+        height: 23px;
+        font-size: 15px;
+    }
+}
