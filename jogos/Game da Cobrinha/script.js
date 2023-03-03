@@ -1,4 +1,3 @@
-window.onload = function(){
 
     var stage = document.getElementById('stage');
     var context = stage.getContext("2d"); // criar a parte grafica do game
@@ -96,7 +95,6 @@ window.onload = function(){
 
     /** movimentação do game */
     function keyPush(event){
-
         switch(event.keyCode){
             case 37: // left
                 vx = -vel;
@@ -118,6 +116,24 @@ window.onload = function(){
                 break;
         }
     }
-    
 
+/** Funções para os botões no celular */
+function btnUp(){
+    vx = 0;
+    vy = -vel;
+}
+
+function btnDown(){
+    vx = 0;
+    vy = vel;
+}
+
+function btnLeft(){
+    vx = -vel;
+    vy = 0;
+}
+
+function btnRight(){
+    vx = vel;
+    vy = 0;
 }

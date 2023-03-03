@@ -4,14 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Octlearn | Snake</title>
+    <title>Octlearn | Jogo dos elementos químicos </title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
     <div class="container">
-        <canvas id="stage" width="600" height="600"></canvas>
+        <div class="canva">
+            <canvas id="stage" width="600" height="600"></canvas>
+        </div>
+        <div class="btns">
+            <div class="up">
+                <button id="btn-up" onclick="btnUp()"><img src="./imgs/up.png" alt="up"></button>
+            </div>
+            <div class="outros">
+                <button id="btn-left" onclick="btnLeft()"><img src="./imgs/left.png" alt="left"></button>
+                <button id="btn-down" onclick="btnDown()"><img src="./imgs/down.png" alt="down"></button>
+                <button id="btn-right" onclick="btnRight()"><img src="./imgs/right.png" alt="right"></button>
+            </div>
+        </div>
         <div class="table">
             <div class="el" id="el-1">
                 <div class="nao-metal">
@@ -107,7 +119,7 @@
              </div> -->
         </div>
     </div>
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
