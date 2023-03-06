@@ -62,14 +62,38 @@ nav ul li a:hover {
   text-decoration-color: #0ee2d9;
 }
 
-.capa {
+.capa{
+  position:fixed; /* stretch a fixed position to the whole screen */
+      top:0;
+      height:100vh; /* fix for mobile browser address bar appearing disappearing */
+      left:0;
+      right:0;
   height: 100vh;
   -webkit-background-size: 100vw;
   -moz-background-size: 100vw;
   -o-background-size: 100vw;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: 100vw;
   background-size: cover;
-  background-attachment: scroll;
+}
+
+.capa:after{
+  position:fixed; /* stretch a fixed position to the whole screen */
+      top:0;
+      height:100vh; /* fix for mobile browser address bar appearing disappearing */
+      left:0;
+      right:0;
+  height: 100vh;
+  -webkit-background-size: 100vw;
+  -moz-background-size: 100vw;
+  -o-background-size: 100vw;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: 100vw;
+  background-size: cover;
 }
 
 .principal {
