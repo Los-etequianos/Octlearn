@@ -608,6 +608,13 @@ nav ul li a:hover {
       display: flex;
       text-align: center;
     }
+    .sobre_grupo_tudo .cards_tudo{
+      width: 100%;
+      height: 100%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
    }
    @media screen and (max-width: 650px){
     .sobre_grupo_tudo .cards_tudo .card_esquerdo .card1 p{
