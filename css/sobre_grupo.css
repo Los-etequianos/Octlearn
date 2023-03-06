@@ -408,143 +408,163 @@ nav ul li a:hover {
    /*Parte - Cards*/
    /*Card Esquerdo*/
    .sobre_grupo_tudo .cards_tudo{
-    width: 95%;
+    width: 100%;
     height: 30rem;
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    margin-bottom: 1rem;
+    justify-content: space-around;
+    overflow-y: hidden;
+    overflow-x: hidden;
    }
+   
    .sobre_grupo_tudo .cards_tudo .card_esquerdo{
-    margin: 1rem 5rem;
     width: 50%;
-    padding: 5px;
+    height: 100%;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 1rem;
    }
    .sobre_grupo_tudo .cards_tudo .card_esquerdo .card1{
-    width: 20rem;
+    width: 24rem;
     height: 23rem;
     background-color: #fff;
     border: 0.6px solid #00ccbe;
     border-radius: 20px;
     overflow: hidden;
     transition: 0.5s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
    }
    .sobre_grupo_tudo .cards_tudo .card_esquerdo .card1:hover{
     transform: scale(1.03);
     cursor: pointer;
    }
-   .sobre_grupo_tudo .cards_tudo .card_esquerdo .card1 h3{
-    width: 90%;
-    padding: 3rem 0 0 2rem;
+   .sobre_grupo_tudo .cards_tudo .card_esquerdo .card1 .botao_card button:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+   }
+   .sobre_grupo_tudo .cards_tudo .card_esquerdo .card1 .card_cor{
+    width: 100%;
+    height: 18%;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+    background: #0ee2d9;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+   }
+   .sobre_grupo_tudo .cards_tudo .card_esquerdo .card1 p{
+    width: 100%;
+    height: 61%;
     text-align: center;
     font-size: 1.2rem;
     font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0.8rem ;
    }
-   .sobre_grupo_tudo .cards_tudo .card_esquerdo .card1 img{
-    width: 1.2rem;
-    height: 1rem;
+   .sobre_grupo_tudo .cards_tudo .card_esquerdo .card1 p span {
+    padding: 1rem 0 0;
    }
-   .sobre_grupo_tudo .cards_tudo .card_esquerdo .card_cor{
-    background-color: #00ccbe;
-    margin: -10px;
-    height: 4rem;
-   }
-   .sobre_grupo_tudo .cards_tudo .card_esquerdo .card_cor h3{
-    color: #fff;
-    text-align: center;
-    padding: 1.5rem 0 0 3rem;
+   .sobre_grupo_tudo .cards_tudo .card_esquerdo .card1 p span i{
+    color: #00ccbe;
     font-size: 1.2rem;
-    font-weight: 600;
    }
-   .sobre_grupo_tudo .cards_tudo .card_esquerdo .card_cor img{
-    width: 1.2rem;
+   .sobre_grupo_tudo .cards_tudo .card_esquerdo .card1 .botao_card{
+    width: 100%;
+    height: 19%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
    }
-   .sobre_grupo_tudo .cards_tudo .card_esquerdo .botao_card button{
+   .sobre_grupo_tudo .cards_tudo .card_esquerdo .card1 .botao_card button{
+    width: 18rem;
+    height: 3.5rem;
     background: #00ccbe;
-    width: 17em;
-    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: none;
-    border-radius: 10px;
-    color: #fff;
-    margin: 2rem 0 0 3rem;
+    border-radius: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
    }
-   .sobre_grupo_tudo .cards_tudo .card_esquerdo .botao_card button:hover{
-    transform: scale(1.03);
-    transition:all 0.3s ease;
-    background: #74fcf3;
-    cursor: pointer;
-   }
-   .sobre_grupo_tudo .cards_tudo .card_esquerdo .botao_card button a{
+   .sobre_grupo_tudo .cards_tudo .card_esquerdo .card1 .botao_card button a{
     text-decoration: none;
     color: #fff;
     font-size: 1.1rem;
-    font-weight: 500;
+    font-weight: 600;
    }
 
-   /*Card Direito*/
+   /* Cards do lado direito */
+
    .sobre_grupo_tudo .cards_tudo .card_direito{
-    width: 70%;
+    width: 50%;
     height: 100%;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
    }
    .sobre_grupo_tudo .cards_tudo .card_direito .card2{
-    width: 23rem;
+    width: 24rem;
     height: 23rem;
     background-color: #fff;
     border: 0.6px solid #ff1964;
     border-radius: 20px;
     overflow: hidden;
     transition: 0.5s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
    }
-   .sobre_grupo_tudo .cards_tudo .card_direito .card2 h3{
-    width: 90%;
-    padding: 2rem 0 0 2rem;
+   .sobre_grupo_tudo .cards_tudo .card_direito .card2 .card_cor{
+    width: 100%;
+    height: 18%;
     text-align: center;
-    font-size: 1.3rem;
-    font-weight: 600;
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+    background: #ff1964;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
    }
-   .sobre_grupo_tudo .cards_tudo .card_direito .card_cor2{
-    background-color: #ff1964;
-    margin: -10px;
-    height: 4rem;
+   .sobre_grupo_tudo .cards_tudo .card_direito .card2 p{
+    width: 100%;
+    height: 65%;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0.8rem ;
+   }
+   .sobre_grupo_tudo .cards_tudo .card_direito .card2 .emojis{
+    width: 100%;
+    height: 15%;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 500;
+    display: flex;
+    color: #ff1964;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 0.8rem ;
    }
    .sobre_grupo_tudo .cards_tudo .card_direito .card2:hover{
     transform: scale(1.03);
     cursor: pointer;
    }
-   .sobre_grupo_tudo .cards_tudo .card_direito .card_cor2 img{
-    width: 1.2rem;
-   }
-   .sobre_grupo_tudo .cards_tudo .card_direito .card_cor2 h3{
-    color: #fff;
-    text-align: center;
-    padding: 1.5rem 0 0 3rem;
-    font-size: 1.2rem;
-    font-weight: 600;
-   }
-   .sobre_grupo_tudo .cards_tudo .card_direito .emojis{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 2.5rem;
-   }
-   .sobre_grupo_tudo .cards_tudo .card_direito .emojis img{
-    width: 2.5rem;
-    margin: 10px;
-    cursor: pointer;
-   }
-   .sobre_grupo_tudo .cards_tudo .card_direito .emojis .img_riso{
-    width: 3rem;
+   .sobre_grupo_tudo .cards_tudo .card_direito .card2 .emojis i:hover{
+    color: #412973;
    }
 
+   .fantasma{
+    display: none;
+   } 
    .fantasma{
     display: none;
    }
@@ -588,15 +608,25 @@ nav ul li a:hover {
       display: flex;
       text-align: center;
     }
-    /*Cards responsivo*/
-    .sobre_grupo_tudo .cards_tudo{
-      width: 100%;
-      height: 100%;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
    }
+   @media screen and (max-width: 650px){
+    .sobre_grupo_tudo .cards_tudo .card_esquerdo .card1 p{
+       font-size: 1rem;
+      }
+      .sobre_grupo_tudo .cards_tudo .card_esquerdo .card1 .botao_card button{
+        width: 15rem;
+        height: 3rem;
+       }
+      .sobre_grupo_tudo .cards_tudo .card_esquerdo .card1 .botao_card button a{
+        font-size: 1rem;
+       }
+    .sobre_grupo_tudo .cards_tudo .card_direito .card2 p{
+       font-size: 1rem;
+      }
+      .sobre_grupo_tudo .cards_tudo .card_direito .card2 .emojis{
+        font-size: 2rem;
+       }
+    }
 
    /*Site responsivo para celular*/
 
@@ -675,36 +705,37 @@ nav ul li a:hover {
         text-align: center;
         margin-right: 1.6rem;
       }
-       /*Cards responsivo*/
-      .sobre_grupo_tudo .cards_tudo .card_direito .card2{
-        width: 18rem;
-        height: 18rem;
-      }
-      .sobre_grupo_tudo .cards_tudo .card_direito .card2 h3{
-        font-size: 0.8rem;
-      }
-      .sobre_grupo_tudo .cards_tudo .card_direito .emojis{
-        padding: 1rem;
-       }
-      .sobre_grupo_tudo .cards_tudo .card_direito .emojis img{
-        width: 1.5rem;
-      }
-      .sobre_grupo_tudo .cards_tudo .card_direito .emojis .img_riso{
-        width: 2rem;
-      }
-      .sobre_grupo_tudo .cards_tudo .card_esquerdo .card1{
-        width: 16rem;
-        height: 20rem;
-      }
-      .sobre_grupo_tudo .cards_tudo .card_esquerdo .card1 h3{
-        font-size: 1rem;
-      }
-      .sobre_grupo_tudo .cards_tudo .card_esquerdo .botao_card button{
-       width: 12em;
-       height: 2.5em;
-        margin: 1rem 3rem;
-      }
-      .sobre_grupo_tudo .cards_tudo .card_esquerdo .botao_card button a{
-        font-size: 0.8rem;
-      }
    }
+
+
+   @media screen and (max-width: 520px){
+    .sobre_grupo_tudo .cards_tudo .card_esquerdo .card1 p{
+       font-size: 0.9rem;
+      }
+      .sobre_grupo_tudo .cards_tudo .card_esquerdo .card1 .botao_card button{
+        width: 13rem;
+        height: 3rem;
+       }
+      .sobre_grupo_tudo .cards_tudo .card_esquerdo .card1 .botao_card button a{
+        font-size: 0.9rem;
+       }
+    .sobre_grupo_tudo .cards_tudo .card_direito .card2 p{
+       font-size: 0.9rem;
+      }
+      .sobre_grupo_tudo .cards_tudo .card_direito .card2 .emojis{
+        font-size: 1.8rem;
+       }
+    }
+   @media screen and (max-width: 500px){
+    .sobre_grupo_tudo .cards_tudo .card_esquerdo {
+       width: 100%;
+       padding: 1rem;
+      }
+      .sobre_grupo_tudo .cards_tudo .card_direito .card2 .emojis{
+        font-size: 2rem;
+       }
+    .sobre_grupo_tudo .cards_tudo .card_direito {
+       width: 100%;
+       padding: 1rem;
+      }
+    }
