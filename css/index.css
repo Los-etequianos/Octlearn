@@ -69,6 +69,7 @@ nav ul li a:hover {
   -o-background-size: 100vw;
   background-size: 100vw;
   background-size: cover;
+  background-attachment: scroll;
 }
 
 .principal {
