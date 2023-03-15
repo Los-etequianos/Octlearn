@@ -1,0 +1,97 @@
+.jogo .card {
+  padding: 30px;
+  margin: 15px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 17vw;
+  height: 160px;
+  border-radius: 0.2em;
+  user-select: none;
+}
+
+.jogo {
+  align-items: center;
+  padding: 10px;
+  /* margin: 10px; */
+  /* top: 24px; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  background-color: #00ccbe;
+}
+
+.jogo .card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 2px 2px 2px 2px;
+}
+
+.jogo .card,
+.jogo .virado {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.jogo .card {
+  background-color: #c4c4c4;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.card:active {
+  transform: scale(0.97);
+  transition: transform 0.2s;
+}
+
+.card.flip {
+  transform: rotateY(180deg);
+}
+
+.card.flip[data-nome="sp"],
+.card.flip[data-nome="sp"] img {
+  background-color: #84cffa;
+}
+
+.card.flip[data-nome="bahia"],
+.card.flip[data-nome="bahia"] img {
+  background-color: #fce78a;
+}
+
+.card.flip[data-nome="am"],
+.card.flip[data-nome="am"] img {
+  background-color: #a005bb;
+}
+
+.card.flip[data-nome="rj"],
+.card.flip[data-nome="rj"] img {
+  background-color: #84FAAC;
+}
+
+.card.flip[data-nome="pr"],
+.card.flip[data-nome="pr"] img {
+  background-color: #fd65c3;
+}
+
+.card.flip[data-nome="to"],
+.card.flip[data-nome="to"] img {
+  background-color: #fa9f84;
+}
+/* novas */
+
+.frente,
+.verso {
+  width: 100px;
+  height: 100px;
+  padding: 15px;
+  position: absolute;
+  backface-visibility: hidden;
+}
+.frente img{
+  width: 10em;
+}
+
+.frente {
+  transform: rotateY(180deg);
+}

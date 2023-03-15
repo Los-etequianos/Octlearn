@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo da Memoria</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/card.css" />
+    <link rel="stylesheet" href="styles/win.css" /><!--Estilo da tela de vitória-->
+    <link rel="stylesheet" href="styles/responsive.css" />
+  </head>
+  <body>
+    <header>
+      <h1>JOGO DA MEMÓRIA</h1>
+    </header>
+    <!-- Essa div vai ser exibida quando o jogador vencer a partida!-->
+    <div id="vitoria">
+      <div id="container">
+        <h1>Parabéns!</h1>
+        <p>Você pode jogar novamente se ainda estiver com dificuldade! :3</p>
+        <a href="index.html">Jogar denovo</a>
+      </div>
+    </div>
+  
+    <section id="responsivo">
+      <h2>Erros <span id="movimentos2">0</span></h2>
+     
+      <a href="index.html">Reiniciar</a>
+    </section>
+
+    <div class="corpo">
+      <section id="esq">
+        <h2>Erros <span id="movimentos">0</span></h2>
+      
+        <a href="index.html">Reiniciar</a>
+      </section>
+      <section class="jogo">
+        <div class="card" data-nome = "sp">
+          <img
+            class="frente"
+            src="./src/sp (1).png"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="./src/back.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "sp">
+          <img
+            class="frente"
+            src="./src/sao_paulo.png"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="./src/back.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "bahia">
+          <img
+            class="frente"
+            src="./src/bahia.png"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="./src/back.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "bahia">
+          <img
+            class="frente"
+            src="./src/bahia_text.png"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="./src/back.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "am">
+          <img
+            class="frente"
+            src="./src/am.png"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="./src/back.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "am">
+          <img
+            class="frente"
+            src="./src/amazonas_text.png"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="./src/back.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "pr">
+          <img
+            class="frente"
+            src="./src/pr.png"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="./src/back.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "pr">
+          <img
+            class="frente"
+            src="./src/pr_text.png"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="./src/back.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "rj">
+          <img
+            class="frente"
+            src="./src/rj3.png"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="./src/back.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "rj">
+          <img
+            class="frente"
+            src="./src/rj_text3.png"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="./src/back.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "to">
+          <img
+            class="frente"
+            src="./src/tocantins.png"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="./src/back.png"
+            alt="card"
+          />
+        </div>
+        <div class="card" data-nome = "to">
+          <img
+            class="frente"
+            src="./src/tocantins_img.png"
+            alt="card"
+          />
+          <img
+            class="verso"
+            src="./src/back.png"
+            alt="card"
+          />
+        </div>
+      </section>
+      <section id="dir"></section>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
