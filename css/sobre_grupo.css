@@ -227,8 +227,9 @@ nav ul li a:hover {
     -moz-background-size: 100vw;
     -o-background-size: 100vw;
     background-size: 100vw;
-    background: url(../img/banners/ipad.png) center no-repeat fixed;
+    background: url(../img/banners/ipad.png) center no-repeat;
     background-size: cover;
+    background-position: center;
   }
   
   .container{

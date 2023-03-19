@@ -231,9 +231,11 @@ main {
   -moz-background-size: 100vw;
   -o-background-size: 100vw;
   background-size: 100vw;
-  background: url(../img/banners/banner_index.png) center no-repeat fixed;
+  background: url(../img/banners/banner_index.png) center no-repeat;
   /* background-position-x: right; */
   background-size: cover;
+  background-position: center;
+  
 }
 
 .conteudo {
